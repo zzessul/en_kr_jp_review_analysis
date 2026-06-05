@@ -1,0 +1,71 @@
+import { Heart, ShieldCheck, ShoppingCart, Truck } from "lucide-react";
+
+function Stars({ value }: { value: number }) {
+  return (
+    <span aria-label={`${value}점`} className="text-lg font-bold text-amber-500">
+      {"★".repeat(Math.floor(value))}
+      <span className="text-slate-300">{"★".repeat(5 - Math.floor(value))}</span>
+    </span>
+  );
+}
+
+export default function ProductCard() {
+  return (
+    <section className="grid gap-6 rounded-lg bg-white p-5 shadow-soft lg:grid-cols-[360px_1fr_280px]">
+      <div className="rounded-lg border border-slate-200 bg-gradient-to-br from-slate-100 to-blue-100 p-6">
+        <div className="flex aspect-square items-center justify-center rounded-lg bg-white shadow-inner">
+          <div className="relative h-56 w-56">
+            <div className="absolute left-5 top-12 h-36 w-12 rounded-full bg-navy-800" />
+            <div className="absolute right-5 top-12 h-36 w-12 rounded-full bg-navy-800" />
+            <div className="absolute left-10 top-10 h-24 w-36 rounded-t-full border-[18px] border-navy-700 border-b-0" />
+            <div className="absolute bottom-12 left-16 h-14 w-24 rounded-md bg-slate-800" />
+            <div className="absolute bottom-16 left-20 h-5 w-16 rounded-full bg-amberSearch" />
+          </div>
+        </div>
+      </div>
+
+      <div className="min-w-0">
+        <p className="text-sm font-semibold text-navy-700">SoundMax 공식 스토어</p>
+        <h1 className="mt-2 text-2xl font-bold leading-tight text-slate-950 md:text-3xl">
+          SoundMax WH-1000X 무선 노이즈 캔슬링 헤드폰
+        </h1>
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <Stars value={4.3} />
+          <span className="font-semibold text-slate-800">원래 평균 별점 4.3</span>
+          <span className="text-slate-500">리뷰 1,248개</span>
+        </div>
+        <div className="mt-5 grid gap-3 text-sm text-slate-700 sm:grid-cols-2">
+          <div className="flex items-center gap-2 rounded-md bg-slate-50 p-3">
+            <ShieldCheck className="text-emerald-600" size={20} />
+            구매자 리뷰 기반 신뢰도 분석
+          </div>
+          <div className="flex items-center gap-2 rounded-md bg-slate-50 p-3">
+            <Truck className="text-navy-700" size={20} />
+            무료배송 · 내일 도착 예정
+          </div>
+        </div>
+        <ul className="mt-5 space-y-2 text-sm text-slate-700">
+          <li>• 적응형 노이즈 캔슬링 및 주변음 모드</li>
+          <li>• 최대 36시간 배터리, 10분 급속 충전 지원</li>
+          <li>• 리뷰 보정 모델이 과대평가 가능성을 함께 표시</li>
+        </ul>
+      </div>
+
+      <aside className="rounded-lg border border-slate-200 p-4">
+        <p className="text-sm text-slate-500">판매가</p>
+        <p className="mt-1 text-3xl font-bold text-slate-950">₩289,000</p>
+        <p className="mt-3 text-sm text-emerald-700">재고 있음</p>
+        <div className="mt-4 space-y-2">
+          <button className="flex w-full items-center justify-center gap-2 rounded-md bg-amberSearch px-4 py-3 font-bold text-navy-950 transition hover:bg-amber-400">
+            <ShoppingCart size={19} />
+            장바구니 담기
+          </button>
+          <button className="flex w-full items-center justify-center gap-2 rounded-md border border-slate-300 px-4 py-3 font-semibold text-slate-700 transition hover:bg-slate-50">
+            <Heart size={18} />
+            관심상품
+          </button>
+        </div>
+      </aside>
+    </section>
+  );
+}
