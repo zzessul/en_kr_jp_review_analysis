@@ -10,6 +10,12 @@ const expressionStyle: Record<ReviewExpressionType, string> = {
   "혼합 감정": "bg-slate-50 text-slate-700 border-slate-200",
 };
 
+const languageStyle: Record<Review["language"], string> = {
+  KR: "bg-blue-50 text-blue-700 border-blue-200",
+  EN: "bg-slate-50 text-slate-700 border-slate-200",
+  JP: "bg-rose-50 text-rose-700 border-rose-200",
+};
+
 function RatingLine({ label, value, muted }: { label: string; value: number; muted?: boolean }) {
   return (
     <div className="flex items-center gap-2">
@@ -26,6 +32,9 @@ export default function ReviewCard({ review }: { review: Review }) {
         <div>
           <div className="flex flex-wrap items-center gap-2">
             <h3 className="font-bold text-slate-950">{review.userName}</h3>
+            <span className={`rounded-full border px-2.5 py-1 text-xs font-semibold ${languageStyle[review.language]}`}>
+              {review.languageLabel}
+            </span>
             <span className={`rounded-full border px-2.5 py-1 text-xs font-semibold ${expressionStyle[review.expressionType]}`}>
               {review.expressionType}
             </span>
@@ -40,6 +49,10 @@ export default function ReviewCard({ review }: { review: Review }) {
 
       <h4 className="mt-4 text-lg font-bold text-slate-950">{review.title}</h4>
       <p className="mt-2 leading-7 text-slate-700">{review.body}</p>
+      <div className="mt-3 rounded-md bg-blue-50 px-3 py-2 text-sm leading-6 text-navy-800">
+        <span className="font-bold">언어별 해석: </span>
+        {review.translatedNote}
+      </div>
       <div className="mt-4 flex flex-wrap items-center gap-2 text-sm">
         <span className="flex items-center gap-1 font-bold text-slate-900">
           <Tags size={16} className="text-navy-700" />
@@ -52,6 +65,10 @@ export default function ReviewCard({ review }: { review: Review }) {
         ))}
       </div>
       <div className="mt-4 rounded-md border border-slate-200 bg-slate-50 px-3 py-2 text-sm text-slate-700">
+        <div className="mb-1">
+          <span className="font-bold text-slate-900">표현 패턴: </span>
+          {review.languagePattern}
+        </div>
         <span className="font-bold text-slate-900">보정 사유: </span>
         {review.reason}
       </div>

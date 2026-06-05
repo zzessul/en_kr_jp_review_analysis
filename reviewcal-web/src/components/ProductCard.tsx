@@ -1,4 +1,5 @@
 import { Heart, MessageSquareText, ShoppingCart, Truck } from "lucide-react";
+import headphonesImage from "../assets/soundmax-headphones.png";
 
 function Stars({ value }: { value: number }) {
   return (
@@ -12,15 +13,13 @@ function Stars({ value }: { value: number }) {
 export default function ProductCard() {
   return (
     <section className="grid gap-5 rounded-lg bg-white p-5 shadow-soft lg:grid-cols-[300px_1fr] xl:grid-cols-[300px_1fr_220px]">
-      <div className="rounded-lg border border-slate-200 bg-gradient-to-br from-slate-100 to-blue-100 p-6">
-        <div className="flex aspect-square items-center justify-center rounded-lg bg-white shadow-inner">
-          <div className="relative h-56 w-56">
-            <div className="absolute left-5 top-12 h-36 w-12 rounded-full bg-navy-800" />
-            <div className="absolute right-5 top-12 h-36 w-12 rounded-full bg-navy-800" />
-            <div className="absolute left-10 top-10 h-24 w-36 rounded-t-full border-[18px] border-navy-700 border-b-0" />
-            <div className="absolute bottom-12 left-16 h-14 w-24 rounded-md bg-slate-800" />
-            <div className="absolute bottom-16 left-20 h-5 w-16 rounded-full bg-amberSearch" />
-          </div>
+      <div className="rounded-lg border border-slate-200 bg-gradient-to-br from-slate-100 to-blue-100 p-4">
+        <div className="flex aspect-square items-center justify-center overflow-hidden rounded-lg bg-white shadow-inner">
+          <img
+            src={headphonesImage}
+            alt="SoundMax WH-1000X 무선 노이즈 캔슬링 헤드폰 제품 사진"
+            className="h-full w-full object-cover"
+          />
         </div>
       </div>
 
@@ -37,7 +36,7 @@ export default function ProductCard() {
         <div className="mt-5 grid gap-3 text-sm text-slate-700">
           <div className="flex items-center gap-2 rounded-md bg-slate-50 p-3">
             <MessageSquareText className="text-emerald-600" size={20} />
-            리뷰 표현 기반 만족도 분석
+            한·영·일 리뷰 표현 기반 만족도 분석
           </div>
           <div className="flex items-center gap-2 rounded-md bg-slate-50 p-3">
             <Truck className="text-navy-700" size={20} />
@@ -47,7 +46,7 @@ export default function ProductCard() {
         <ul className="mt-5 space-y-2 text-sm text-slate-700">
           <li>• 적응형 노이즈 캔슬링 및 주변음 모드</li>
           <li>• 최대 36시간 배터리, 10분 급속 충전 지원</li>
-          <li>• 리뷰 텍스트와 속성 감성을 반영한 보정 별점 제공</li>
+          <li>• 언어별 감성 표현과 속성 감성을 반영한 보정 별점 제공</li>
         </ul>
       </div>
 

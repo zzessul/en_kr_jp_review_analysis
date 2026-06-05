@@ -1,5 +1,10 @@
 import { ArrowDown, BarChart3, Gauge } from "lucide-react";
-import { attributeSatisfaction, calibratedRatingDistribution, originalRatingDistribution } from "../data";
+import {
+  attributeSatisfaction,
+  calibratedRatingDistribution,
+  languageSummaries,
+  originalRatingDistribution,
+} from "../data";
 
 function MetricCard({ label, value, tone }: { label: string; value: string; tone?: "blue" | "amber" }) {
   return (
@@ -15,7 +20,7 @@ export default function ReviewSummary() {
     <section className="rounded-lg bg-white p-5 shadow-soft">
       <div className="flex flex-wrap items-start justify-between gap-4">
         <div>
-          <p className="text-sm font-semibold text-navy-700">표현 기반 만족도 분석</p>
+          <p className="text-sm font-semibold text-navy-700">한·영·일 감성 표현 패턴 분석</p>
           <h2 className="text-2xl font-bold text-slate-950">고객 리뷰</h2>
         </div>
         <div className="rounded-lg bg-navy-950 px-5 py-3 text-white">
@@ -33,20 +38,37 @@ export default function ReviewSummary() {
             보정 후 -0.5점
           </div>
           <p className="mt-2 text-sm leading-6 text-slate-700">
-            리뷰 텍스트의 실제 만족도 표현을 반영해 별점을 재계산했습니다.
+            한국어, 영어, 일본어 리뷰 텍스트의 실제 만족도 표현을 반영해 별점을 재계산했습니다.
           </p>
         </div>
       </div>
 
       <div className="mt-5 rounded-lg border border-navy-100 bg-navy-900 p-4 text-white">
         <p className="text-sm leading-6 text-slate-100">
-          별점은 같아도 만족도는 다를 수 있습니다. ReviewCal은 리뷰 텍스트의 표현과 속성 감성을 분석해,
+          별점은 같아도 만족도는 다를 수 있습니다. ReviewCal은 한·영·일 리뷰 텍스트의 표현과 속성 감성을 분석해,
           소비자가 실제로 느낀 만족도에 가까운 순서로 리뷰를 다시 보여줍니다.
         </p>
       </div>
 
       <div className="mt-6 grid gap-5 lg:grid-cols-[1fr_280px]">
         <div className="grid gap-5 md:grid-cols-2">
+          <div className="rounded-lg border border-slate-200 p-4 md:col-span-2">
+            <div className="mb-3 flex items-center gap-2 font-bold text-slate-900">
+              <BarChart3 size={20} className="text-navy-700" />
+              언어별 표현 패턴
+            </div>
+            <div className="grid gap-3 md:grid-cols-3">
+              {languageSummaries.map((item) => (
+                <div key={item.code} className="rounded-md bg-slate-50 p-3">
+                  <div className="flex items-center justify-between gap-2">
+                    <span className="font-bold text-slate-950">{item.label}</span>
+                    <span className="rounded-full bg-white px-2 py-1 text-xs font-bold text-navy-700">{item.delta}</span>
+                  </div>
+                  <p className="mt-2 text-sm leading-6 text-slate-600">{item.pattern}</p>
+                </div>
+              ))}
+            </div>
+          </div>
           <Distribution title="기존 별점 분포" rows={originalRatingDistribution} color="bg-amberSearch" />
           <Distribution title="보정 별점 분포" rows={calibratedRatingDistribution} color="bg-navy-700" />
           <div className="rounded-lg border border-slate-200 p-4 md:col-span-2">
@@ -81,7 +103,8 @@ export default function ReviewSummary() {
             </div>
           </div>
           <div className="mt-4 rounded-md bg-slate-50 p-3 text-sm text-slate-600">
-            5점 리뷰 중 실제 만족도 낮은 리뷰 94개, 3점 리뷰 중 실제 만족도 높은 리뷰 57개가 평균 보정에 반영되었습니다.
+            같은 5점 리뷰라도 한국어와 일본어에서는 완곡한 아쉬움 표현이, 영어에서는 속성별 장단점 분리가 다르게 나타났습니다.
+            새 제품 반응 탐색에는 이 언어별 차이를 반영한 보정 순위를 사용합니다.
           </div>
         </div>
       </div>

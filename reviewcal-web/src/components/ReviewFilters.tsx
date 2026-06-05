@@ -23,6 +23,12 @@ export default function ReviewFilters() {
           <option>3점 이하</option>
         </select>
         <select className="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700">
+          <option>전체 언어</option>
+          <option>한국어</option>
+          <option>English</option>
+          <option>日本語</option>
+        </select>
+        <select className="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700">
           <option>전체 표현 유형</option>
           <option>별점-텍스트 일치</option>
           <option>완곡한 불만</option>

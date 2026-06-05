@@ -1,11 +1,12 @@
 import { Brain, ChevronRight, LineChart, MessageSquareText } from "lucide-react";
 
 const reasons = [
+  "같은 별점 안에서 언어별로 달라지는 감성 표현 방식",
   "별점과 텍스트 감성의 불일치",
   "가격, 품질, 배송, 사용성, 디자인, 서비스, 호환성 등 속성별 감성",
-  "직설형 / 완곡형 / 강조형 / 주관형 표현 패턴",
+  "한국어·영어·일본어의 직설형 / 완곡형 / 강조형 / 주관형 표현 패턴",
   "긍정 표현 뒤에 이어지는 아쉬움 표현",
-  "같은 별점 안에서 나타나는 만족도 차이",
+  "새 제품 리뷰에서 초기에 나타나는 반응 변화",
 ];
 
 export default function CalibrationPanel() {
@@ -16,13 +17,13 @@ export default function CalibrationPanel() {
           <Brain size={22} />
         </div>
         <div>
-          <p className="text-sm font-semibold text-navy-700">표현 기반 만족도 분석</p>
+          <p className="text-sm font-semibold text-navy-700">한·영·일 표현 기반 만족도 분석</p>
           <h2 className="text-xl font-bold text-slate-950">별점 보정 모델</h2>
         </div>
       </div>
 
       <p className="mt-4 text-sm leading-6 text-slate-700">
-        리뷰의 표면적 별점이 아니라, 텍스트에 나타난 실제 만족도 신호를 분석해 보정 별점을 산출합니다.
+        리뷰의 표면적 별점이 아니라, 한국어·영어·일본어 텍스트에 나타난 실제 만족도 신호를 분석해 보정 별점을 산출합니다.
       </p>
 
       <div className="mt-5 grid grid-cols-2 gap-3">
@@ -36,9 +37,9 @@ export default function CalibrationPanel() {
         <div className="rounded-md bg-slate-50 p-3">
           <div className="flex items-center gap-2 text-sm font-semibold text-slate-700">
             <LineChart size={16} />
-            만족도 재계산
+            새 제품 반응
           </div>
-          <p className="mt-2 text-2xl font-bold text-slate-950">-0.5점</p>
+          <p className="mt-2 text-2xl font-bold text-slate-950">초기 탐색</p>
         </div>
       </div>
 
