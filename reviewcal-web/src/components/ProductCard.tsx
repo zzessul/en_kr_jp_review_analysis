@@ -1,4 +1,4 @@
-import { Heart, ShieldCheck, ShoppingCart, Truck } from "lucide-react";
+import { Heart, MessageSquareText, ShoppingCart, Truck } from "lucide-react";
 
 function Stars({ value }: { value: number }) {
   return (
@@ -11,7 +11,7 @@ function Stars({ value }: { value: number }) {
 
 export default function ProductCard() {
   return (
-    <section className="grid gap-6 rounded-lg bg-white p-5 shadow-soft lg:grid-cols-[360px_1fr_280px]">
+    <section className="grid gap-5 rounded-lg bg-white p-5 shadow-soft lg:grid-cols-[300px_1fr] xl:grid-cols-[300px_1fr_220px]">
       <div className="rounded-lg border border-slate-200 bg-gradient-to-br from-slate-100 to-blue-100 p-6">
         <div className="flex aspect-square items-center justify-center rounded-lg bg-white shadow-inner">
           <div className="relative h-56 w-56">
@@ -34,10 +34,10 @@ export default function ProductCard() {
           <span className="font-semibold text-slate-800">원래 평균 별점 4.3</span>
           <span className="text-slate-500">리뷰 1,248개</span>
         </div>
-        <div className="mt-5 grid gap-3 text-sm text-slate-700 sm:grid-cols-2">
+        <div className="mt-5 grid gap-3 text-sm text-slate-700">
           <div className="flex items-center gap-2 rounded-md bg-slate-50 p-3">
-            <ShieldCheck className="text-emerald-600" size={20} />
-            구매자 리뷰 기반 신뢰도 분석
+            <MessageSquareText className="text-emerald-600" size={20} />
+            리뷰 표현 기반 만족도 분석
           </div>
           <div className="flex items-center gap-2 rounded-md bg-slate-50 p-3">
             <Truck className="text-navy-700" size={20} />
@@ -47,7 +47,7 @@ export default function ProductCard() {
         <ul className="mt-5 space-y-2 text-sm text-slate-700">
           <li>• 적응형 노이즈 캔슬링 및 주변음 모드</li>
           <li>• 최대 36시간 배터리, 10분 급속 충전 지원</li>
-          <li>• 리뷰 보정 모델이 과대평가 가능성을 함께 표시</li>
+          <li>• 리뷰 텍스트와 속성 감성을 반영한 보정 별점 제공</li>
         </ul>
       </div>
 

@@ -10,8 +10,11 @@ export default function ReviewFilters() {
         </div>
         <select className="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700">
           <option>최신순</option>
-          <option>보정 점수 낮은 순</option>
-          <option>의심 리뷰 우선</option>
+          <option>기존 별점 높은 순</option>
+          <option>보정 별점 높은 순</option>
+          <option>보정 별점 낮은 순</option>
+          <option>별점-텍스트 불일치 큰 순</option>
+          <option>속성 만족도 낮은 순</option>
         </select>
         <select className="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700">
           <option>전체 별점</option>
@@ -20,10 +23,13 @@ export default function ReviewFilters() {
           <option>3점 이하</option>
         </select>
         <select className="rounded-md border border-slate-300 bg-white px-3 py-2 text-sm text-slate-700">
-          <option>전체 리뷰 유형</option>
-          <option>구매자 리뷰</option>
-          <option>과대평가 의심</option>
-          <option>신뢰도 낮음</option>
+          <option>전체 표현 유형</option>
+          <option>별점-텍스트 일치</option>
+          <option>완곡한 불만</option>
+          <option>숨은 만족</option>
+          <option>속성 불만</option>
+          <option>강조형 긍정</option>
+          <option>혼합 감정</option>
         </select>
         <label className="ml-auto flex min-w-[240px] flex-1 items-center gap-2 rounded-md border border-slate-300 px-3 py-2 text-sm text-slate-500 md:max-w-sm">
           <Search size={17} />

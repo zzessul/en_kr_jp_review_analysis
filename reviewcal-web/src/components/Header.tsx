@@ -45,7 +45,7 @@ export default function Header() {
         <div className="mx-auto flex max-w-7xl gap-7 overflow-x-auto px-5 py-2 text-sm text-slate-100">
           <span>오늘의 특가</span>
           <span>보정 평점 높은 상품</span>
-          <span>리뷰 신뢰도 랭킹</span>
+          <span>만족도 보정 랭킹</span>
           <span>전자기기</span>
           <span>생활용품</span>
           <span>고객센터</span>
