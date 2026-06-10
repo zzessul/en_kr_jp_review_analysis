@@ -89,13 +89,10 @@ export default function LiveReviewAnalysis() {
         <div className="flex items-center gap-2">
           <Sparkles size={20} className="text-amber-500" />
           <div>
-            <p className="text-sm font-semibold text-navy-700">실시간 모델 연결</p>
             <h2 className="text-xl font-bold text-slate-950">새 리뷰 분석</h2>
+            <p className="mt-1 text-sm text-slate-500">리뷰 문장을 입력하면 표현 패턴과 보정 별점을 확인할 수 있습니다.</p>
           </div>
         </div>
-        <span className="ml-auto rounded-full bg-slate-100 px-3 py-1 text-xs font-semibold text-slate-600">
-          POST /analyze
-        </span>
       </div>
 
       <div className="grid gap-4 lg:grid-cols-[1fr_320px]">

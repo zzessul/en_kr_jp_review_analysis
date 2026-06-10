@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Heart, MessageSquareText, ShoppingCart, Truck } from "lucide-react";
 import headphonesImage from "../assets/soundmax-headphones.png";
 
@@ -11,6 +12,8 @@ function Stars({ value }: { value: number }) {
 }
 
 export default function ProductCard() {
+  const [isFavorite, setIsFavorite] = useState(false);
+
   return (
     <section className="grid gap-5 rounded-lg bg-white p-5 shadow-soft lg:grid-cols-[300px_1fr] xl:grid-cols-[300px_1fr_220px]">
       <div className="rounded-lg border border-slate-200 bg-gradient-to-br from-slate-100 to-blue-100 p-4">
@@ -59,9 +62,18 @@ export default function ProductCard() {
             <ShoppingCart size={19} />
             장바구니 담기
           </button>
-          <button className="flex w-full items-center justify-center gap-2 rounded-md border border-slate-300 px-4 py-3 font-semibold text-slate-700 transition hover:bg-slate-50">
-            <Heart size={18} />
-            관심상품
+          <button
+            type="button"
+            onClick={() => setIsFavorite((current) => !current)}
+            aria-pressed={isFavorite}
+            className={`flex w-full items-center justify-center gap-2 rounded-md border px-4 py-3 font-semibold transition ${
+              isFavorite
+                ? "border-rose-200 bg-rose-50 text-rose-600 hover:bg-rose-100"
+                : "border-slate-300 text-slate-700 hover:bg-slate-50"
+            }`}
+          >
+            <Heart size={18} fill={isFavorite ? "currentColor" : "none"} />
+            {isFavorite ? "관심상품 등록됨" : "관심상품"}
           </button>
         </div>
       </aside>
