@@ -24,7 +24,7 @@ type AnalyzeResult = {
   body: string;
 };
 
-const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "http://localhost:8000";
+const API_BASE_URL = import.meta.env.VITE_API_BASE_URL ?? "";
 
 const samples: Record<ApiLanguage, string> = {
   ko: "좋긴 한데 오래 쓰면 조금 아쉬워요. 소음 차단은 좋은데 착용감이 불편하네요.",
@@ -58,7 +58,8 @@ export default function LiveReviewAnalysis() {
     setLoading(true);
     setError(null);
     try {
-      const response = await fetch(`${API_BASE_URL}/analyze`, {
+      const endpoint = API_BASE_URL ? `${API_BASE_URL}/analyze` : "/api/analyze";
+      const response = await fetch(endpoint, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ text, star, language }),
@@ -74,7 +75,7 @@ export default function LiveReviewAnalysis() {
       const message = err instanceof Error ? err.message : "분석 요청에 실패했습니다.";
       setError(
         message.includes("Failed to fetch")
-          ? `백엔드 서버에 연결할 수 없습니다. 로컬에서는 ${API_BASE_URL} 서버를 먼저 실행하세요.`
+          ? `분석 API에 연결할 수 없습니다. 로컬 FastAPI를 쓰려면 VITE_API_BASE_URL을 설정하고 서버를 실행하세요.`
           : message,
       );
     } finally {
@@ -172,7 +173,7 @@ export default function LiveReviewAnalysis() {
         <div className="rounded-lg border border-slate-200 bg-slate-50 p-4">
           {!result ? (
             <div className="flex h-full min-h-56 items-center justify-center text-center text-sm leading-6 text-slate-500">
-              백엔드가 실행 중이면 입력한 리뷰의 보정 별점, 표현 유형, 보정 사유가 여기에 표시됩니다.
+              입력한 리뷰의 보정 별점, 표현 유형, 보정 사유가 여기에 표시됩니다.
             </div>
           ) : (
             <div>
