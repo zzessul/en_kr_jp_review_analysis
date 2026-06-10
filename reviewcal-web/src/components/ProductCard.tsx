@@ -1,6 +1,9 @@
 import { useState } from "react";
 import { Heart, MessageSquareText, ShieldCheck, ShoppingCart, Truck } from "lucide-react";
-import headphonesImage from "../assets/soundmax-headphones.png";
+import soundmaxBottom from "../assets/soundmax-bottom.png";
+import soundmaxFront from "../assets/soundmax-front.png";
+import soundmaxSide from "../assets/soundmax-side.png";
+import soundmaxTop from "../assets/soundmax-top.png";
 
 function Stars({ value }: { value: number }) {
   return (
@@ -12,17 +15,16 @@ function Stars({ value }: { value: number }) {
 }
 
 const productViews = [
-  { label: "정면", className: "scale-100 object-center" },
-  { label: "측면", className: "scale-110 object-[62%_50%]" },
-  { label: "상세", className: "scale-125 object-[42%_44%]" },
-  { label: "패키지", className: "scale-95 object-[50%_54%]" },
+  { label: "정면", src: soundmaxFront },
+  { label: "측면", src: soundmaxSide },
+  { label: "위쪽", src: soundmaxTop },
+  { label: "아래쪽", src: soundmaxBottom },
 ];
 
 const colors = [
   { name: "미드나잇 네이비", value: "bg-navy-900" },
   { name: "클래식 블랙", value: "bg-slate-950" },
   { name: "라이트 실버", value: "bg-slate-200" },
-  { name: "샌드 베이지", value: "bg-stone-300" },
 ];
 
 export default function ProductCard() {
@@ -31,8 +33,8 @@ export default function ProductCard() {
   const [selectedColor, setSelectedColor] = useState(colors[0].name);
 
   return (
-    <section className="grid gap-6 rounded-lg bg-white p-5 shadow-soft lg:grid-cols-[420px_1fr] xl:grid-cols-[440px_1fr_250px]">
-      <div className="grid gap-3 sm:grid-cols-[74px_1fr]">
+    <section className="grid gap-6 rounded-lg bg-white p-5 shadow-soft lg:grid-cols-[minmax(360px,470px)_minmax(0,1fr)] xl:grid-cols-[minmax(380px,480px)_minmax(0,1fr)_260px]">
+      <div className="grid min-w-0 gap-3 sm:grid-cols-[74px_minmax(0,1fr)]">
         <div className="order-2 grid grid-cols-4 gap-2 sm:order-1 sm:grid-cols-1">
           {productViews.map((view, index) => (
             <button
@@ -40,21 +42,21 @@ export default function ProductCard() {
               type="button"
               onClick={() => setSelectedView(index)}
               aria-label={`${view.label} 제품 사진 보기`}
-              className={`h-16 overflow-hidden rounded-md border bg-white p-1 transition sm:h-20 ${
+              className={`aspect-square overflow-hidden rounded-md border bg-white p-1 transition ${
                 selectedView === index ? "border-amber-400 ring-2 ring-amber-100" : "border-slate-200 hover:border-slate-400"
               }`}
             >
-              <img src={headphonesImage} alt="" className={`h-full w-full object-cover ${view.className}`} />
+              <img src={view.src} alt="" className="h-full w-full object-contain" />
             </button>
           ))}
         </div>
 
         <div className="order-1 rounded-lg border border-slate-200 bg-slate-50 p-4 sm:order-2">
-          <div className="flex aspect-square items-center justify-center overflow-hidden rounded-lg bg-white shadow-inner">
+          <div className="flex aspect-square max-h-[520px] items-center justify-center overflow-hidden rounded-lg bg-white shadow-inner">
             <img
-              src={headphonesImage}
+              src={productViews[selectedView].src}
               alt={`SoundMax WH-1000X 무선 노이즈 캔슬링 헤드폰 ${productViews[selectedView].label} 사진`}
-              className={`h-full w-full object-cover transition duration-300 ${productViews[selectedView].className}`}
+              className="h-full w-full object-contain transition duration-300"
             />
           </div>
           <p className="mt-3 text-center text-sm font-semibold text-slate-600">{productViews[selectedView].label} 보기</p>
@@ -75,20 +77,18 @@ export default function ProductCard() {
         <div className="mt-5 border-y border-slate-200 py-4">
           <div>
             <p className="text-sm font-bold text-slate-900">색상</p>
-            <p className="mt-1 text-sm text-slate-500">{selectedColor}</p>
-            <div className="mt-3 grid gap-2 sm:grid-cols-2">
+            <div className="mt-3 flex items-center gap-3">
               {colors.map((color) => (
                 <button
                   key={color.name}
                   type="button"
                   onClick={() => setSelectedColor(color.name)}
                   aria-label={`${color.name} 선택`}
-                  className={`flex items-center gap-2 rounded-md border px-3 py-2 text-left text-sm font-semibold transition ${
-                    selectedColor === color.name ? "border-amber-500 ring-2 ring-amber-100" : "border-slate-300"
+                  className={`grid h-11 w-11 place-items-center rounded-full border bg-white transition ${
+                    selectedColor === color.name ? "border-amber-500 ring-2 ring-amber-100" : "border-slate-300 hover:border-slate-500"
                   }`}
                 >
-                  <span className={`h-6 w-6 rounded-full ${color.value}`} />
-                  <span className="text-slate-700">{color.name}</span>
+                  <span className={`h-8 w-8 rounded-full ${color.value}`} />
                 </button>
               ))}
             </div>

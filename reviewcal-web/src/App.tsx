@@ -31,9 +31,10 @@ export default function App() {
       <main className="mx-auto max-w-7xl px-5 py-6">
         <div className="mb-4 text-sm text-slate-500">홈 &gt; 전자기기 &gt; 헤드폰 &gt; SoundMax WH-1000X</div>
 
-        <div className="grid gap-6 xl:grid-cols-[1fr_360px]">
-          <div className="space-y-6">
-            <ProductCard />
+        <ProductCard />
+
+        <div className="mt-6 grid gap-6 xl:grid-cols-[1fr_360px]">
+          <div>
             <ReviewSummary />
           </div>
           <div className="xl:sticky xl:top-28 xl:self-start">

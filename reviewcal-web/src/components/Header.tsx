@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Search, ShoppingCart, UserRound, X } from "lucide-react";
+import { BarChart3, Search, ShoppingCart, Star, UserRound, X } from "lucide-react";
 
 export default function Header() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
@@ -9,8 +9,14 @@ export default function Header() {
       <header className="sticky top-0 z-30 bg-navy-950 text-white shadow-lg">
         <div className="mx-auto flex max-w-7xl items-center gap-4 px-5 py-3">
           <div className="flex min-w-fit items-center gap-2">
-            <div className="grid h-9 w-9 place-items-center rounded bg-amberSearch text-lg font-black text-navy-950">R</div>
-            <span className="text-2xl font-bold tracking-normal">ReviewCal</span>
+            <div className="relative grid h-10 w-10 place-items-center rounded-md bg-amberSearch text-navy-950 shadow-sm">
+              <BarChart3 size={20} strokeWidth={2.8} />
+              <Star className="absolute -right-1 -top-1 rounded-full bg-white fill-navy-950 p-0.5 text-navy-950" size={15} strokeWidth={2.4} />
+            </div>
+            <div className="leading-none">
+              <span className="block text-2xl font-black tracking-normal">ReviewCal</span>
+              <span className="text-[10px] font-semibold uppercase tracking-[0.22em] text-amber-200">calibrated reviews</span>
+            </div>
           </div>
 
           <div className="hidden min-w-[150px] items-center rounded border border-white/10 bg-white/10 px-3 py-2 text-sm text-slate-100 md:flex">
