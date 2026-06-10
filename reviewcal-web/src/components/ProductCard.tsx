@@ -31,7 +31,7 @@ export default function ProductCard() {
         <div className="mt-4 flex flex-wrap items-center gap-3">
           <Stars value={4.3} />
           <span className="font-semibold text-slate-800">원래 평균 별점 4.3</span>
-          <span className="text-slate-500">리뷰 1,248개</span>
+          <span className="text-slate-500">분석 리뷰 150개</span>
         </div>
         <div className="mt-5 grid gap-3 text-sm text-slate-700">
           <div className="flex items-center gap-2 rounded-md bg-slate-50 p-3">

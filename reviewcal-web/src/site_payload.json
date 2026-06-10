@@ -1,0 +1,3879 @@
+{
+  "en": {
+    "summary": {
+      "language": "EN",
+      "languageLabel": "English",
+      "n_reviews": 50,
+      "star_summary": {
+        "observed_mean": 2.92,
+        "calibrated_mean": 3.05,
+        "delta": 0.13
+      },
+      "originalRatingDistribution": [
+        {
+          "stars": 5,
+          "count": 8,
+          "share": 16.0
+        },
+        {
+          "stars": 4,
+          "count": 11,
+          "share": 22.0
+        },
+        {
+          "stars": 3,
+          "count": 10,
+          "share": 20.0
+        },
+        {
+          "stars": 2,
+          "count": 11,
+          "share": 22.0
+        },
+        {
+          "stars": 1,
+          "count": 10,
+          "share": 20.0
+        }
+      ],
+      "calibratedRatingDistribution": [
+        {
+          "stars": 5,
+          "count": 2,
+          "share": 4.0
+        },
+        {
+          "stars": 4,
+          "count": 10,
+          "share": 20.0
+        },
+        {
+          "stars": 3,
+          "count": 25,
+          "share": 50.0
+        },
+        {
+          "stars": 2,
+          "count": 13,
+          "share": 26.0
+        },
+        {
+          "stars": 1,
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "attributeSatisfaction": [
+        {
+          "label": "디자인",
+          "score": 73,
+          "mention_rate": 24.0
+        },
+        {
+          "label": "호환성",
+          "score": 69,
+          "mention_rate": 26.0
+        },
+        {
+          "label": "품질",
+          "score": 66,
+          "mention_rate": 32.0
+        },
+        {
+          "label": "사용성",
+          "score": 65,
+          "mention_rate": 24.0
+        },
+        {
+          "label": "서비스",
+          "score": 63,
+          "mention_rate": 4.0
+        },
+        {
+          "label": "배송",
+          "score": 58,
+          "mention_rate": 14.0
+        },
+        {
+          "label": "가격",
+          "score": 54,
+          "mention_rate": 12.0
+        }
+      ],
+      "expressionTypes": [
+        {
+          "label": "혼합 감정",
+          "count": 21,
+          "share": 42.0
+        },
+        {
+          "label": "별점-텍스트 일치",
+          "count": 17,
+          "share": 34.0
+        },
+        {
+          "label": "완곡한 불만",
+          "count": 9,
+          "share": 18.0
+        },
+        {
+          "label": "속성 불만",
+          "count": 2,
+          "share": 4.0
+        },
+        {
+          "label": "숨은 만족",
+          "count": 1,
+          "share": 2.0
+        }
+      ],
+      "expression": {
+        "directness": 0.07,
+        "euphemism": -0.075,
+        "intensify": 0.008,
+        "modality": -0.739,
+        "subjectivity": 0.377,
+        "comparative": 0.064
+      },
+      "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다."
+    },
+    "reviews": [
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 5.0,
+        "calibratedRating": 3.38,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "사용성",
+          "호환성"
+        ],
+        "translatedNote": "높은 별점(5) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.4점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": -0.18,
+          "intensify": -0.34,
+          "modality": 1.01,
+          "subjectivity": 0.05,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Worked as described , my 2006 Winnebago Itasca headlights were all yellow , now they look like I just replaced them. I would use this product again."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 2.0,
+        "calibratedRating": 3.19,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.2점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.38,
+          "euphemism": -0.29,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 1.24,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "My first and last time I used this product, I made a stew that boiled on the lowest setting."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 1.0,
+        "calibratedRating": 2.57,
+        "expressionType": "속성 불만",
+        "attributes": [
+          "가격",
+          "사용성"
+        ],
+        "translatedNote": "가격, 사용성 속성에서 부정 감성이 강하게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "가격, 사용성 속성의 부정 감성이 강해 보정 별점이 2.6점으로 낮아집니다.",
+        "expression": {
+          "directness": 0.48,
+          "euphemism": 0.24,
+          "intensify": 0.49,
+          "modality": -0.54,
+          "subjectivity": 0.07,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Hands are very weak. Not good for everyday use. I have been using mine for around 90 days and she about had it. Save your money."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 1.0,
+        "calibratedRating": 2.75,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.8점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.08,
+          "euphemism": -0.19,
+          "intensify": 0.08,
+          "modality": -0.54,
+          "subjectivity": 0.11,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Opened to find base separated at bottom, dent in back and broken pieces in box bottom. Very disappointed."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 3.0,
+        "calibratedRating": 4.37,
+        "expressionType": "숨은 만족",
+        "attributes": [
+          "품질",
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "중간 별점(3)이지만 강한 긍정 표현이 두드러짐",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현에서 긍정 신호가 강해 실제 만족도가 4.4점으로 높게 조정됩니다.",
+        "expression": {
+          "directness": 0.65,
+          "euphemism": 0.04,
+          "intensify": 0.08,
+          "modality": -0.54,
+          "subjectivity": 0.74,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "not as easy to use as I had hoped, but most of the features work ok"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 2.0,
+        "calibratedRating": 2.64,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.6점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": -0.18,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": -0.5,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "It really sucks that I have to go all the way to high speed before it turns off sometimes causing a mess. Then after 2 months it broke."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 5.0,
+        "calibratedRating": 3.99,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "품질",
+          "호환성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 4.0점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": 0.03,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 0.78,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Good quality and still going strong."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 1.0,
+        "calibratedRating": 2.55,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.5점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.16,
+          "euphemism": -0.23,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": -0.55,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Only worked for a week then it stopped working"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 3.0,
+        "calibratedRating": 2.11,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.1점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": -0.27,
+          "intensify": -0.34,
+          "modality": 1.5,
+          "subjectivity": -1.77,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "I would have given 5 stars but the company sent 4 straight pins instead of the 2 curved and 2 straight."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 4.0,
+        "calibratedRating": 3.92,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "품질",
+          "디자인"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.9점).",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": 0.34,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 0.85,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "A little large for the hand but in good quality"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 5.0,
+        "calibratedRating": 4.69,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "품질",
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "표면 별점(5)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (4.7점).",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": -0.04,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 0.23,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Looks and works great and the light is a nice touch."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 2.0,
+        "calibratedRating": 2.21,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.2점).",
+        "expression": {
+          "directness": 0.5,
+          "euphemism": -0.24,
+          "intensify": 0.08,
+          "modality": -0.54,
+          "subjectivity": -1.04,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "the sound wasn't that crisp and they stopped working after 2 months"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 4.0,
+        "calibratedRating": 3.95,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "사용성",
+          "품질",
+          "배송"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.9점).",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": 0.3,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 0.33,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "The device is simple, easy to install and really eliminates any play in the ball mount in the receiver. It's inexpensive but sturdily constructed and I intend to order on for my other tow vehicle."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 3.0,
+        "calibratedRating": 3.26,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "배송"
+        ],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.3점).",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": -0.1,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 0.41,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "I liked that it is lightweight but you have to charge it constantly"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 2.0,
+        "calibratedRating": 2.94,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.9점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.18,
+          "euphemism": -0.11,
+          "intensify": 0.49,
+          "modality": -0.54,
+          "subjectivity": 0.63,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "This pen is short and not easy to hold unless you were a child with small hands. I am a female with small hands and it's too small for me."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 2.0,
+        "calibratedRating": 3.28,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "사용성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.3점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.06,
+          "euphemism": 0.15,
+          "intensify": 1.28,
+          "modality": -0.54,
+          "subjectivity": 0.74,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "It looks good but it feels really cheap and it's very small... Like I'm not a big guy but it doesn't even for me. It's tiny and constrictive"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 4.0,
+        "calibratedRating": 2.96,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "호환성"
+        ],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.0점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": 0.05,
+          "euphemism": 0.03,
+          "intensify": 0.08,
+          "modality": 1.7,
+          "subjectivity": 0.1,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "We'll see how long it lasts, but out of the box the stick is absolutely perfect which is all you should care about on an N64 controller. The sensitivity, range of motion, etc, is all perfect. I'll update this review if it starts to go faulty but first impressions are great."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 3.0,
+        "calibratedRating": 3.51,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.5점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": -0.42,
+          "intensify": 0.08,
+          "modality": -0.54,
+          "subjectivity": 1.02,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "I know they are minis but too small"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 1.0,
+        "calibratedRating": 2.22,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.2점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.09,
+          "euphemism": 0.12,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": -1.34,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "i purchased the 64 GB drive and the box along with the drive itself says 64 GB but when you look at the properties of the drive it is only 32 GB"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 5.0,
+        "calibratedRating": 3.3,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "품질",
+          "사용성",
+          "배송"
+        ],
+        "translatedNote": "높은 별점(5) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.3점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": 0.22,
+          "intensify": -0.34,
+          "modality": 1.82,
+          "subjectivity": -0.06,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Quick shipping, arrived in good condition, worked as described. would purchase from this seller again."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 4.0,
+        "calibratedRating": 3.99,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "호환성",
+          "사용성"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (4.0점).",
+        "expression": {
+          "directness": 0.65,
+          "euphemism": -0.69,
+          "intensify": 0.6,
+          "modality": -0.54,
+          "subjectivity": 1.0,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Very Good! Highly recommend."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 4.0,
+        "calibratedRating": 3.48,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "사용성",
+          "가격"
+        ],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.5점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": 0.04,
+          "intensify": 0.71,
+          "modality": -0.54,
+          "subjectivity": 0.6,
+          "comparative": 1.38
+        },
+        "title": "",
+        "body": "I purchased these filters for my refrigerator. They arrived quickly and in good quality! They are very easy to instal and last several months! The price was much cheaper online."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 4.0,
+        "calibratedRating": 3.59,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "호환성",
+          "사용성"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.6점).",
+        "expression": {
+          "directness": -0.03,
+          "euphemism": 0.27,
+          "intensify": -0.34,
+          "modality": 0.23,
+          "subjectivity": 0.59,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Works perfectly with my Nintendo Switch, but I got 2 blue screen in a couple of hours on my laptop while this was attached to the laptop. Might be coincidence but I decided not to use it with my laptop. I bought it for my nintendo switch so not a big problem for me."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 3.0,
+        "calibratedRating": 2.86,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.9점).",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": -0.48,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": -0.28,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "It's a bit big in the laptop, and takes up to types C ports."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 1.0,
+        "calibratedRating": 2.79,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.8점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": 0.02,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": -0.13,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Split after only a few months, even with oil applications"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 2.0,
+        "calibratedRating": 2.26,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.3점).",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": 0.36,
+          "intensify": -0.34,
+          "modality": 0.12,
+          "subjectivity": -0.0,
+          "comparative": 1.38
+        },
+        "title": "",
+        "body": "We bought this product for cooking healthy home-made French fries, but they get burned because the stirrer keeps getting off the gear and stops turning. It's like the bottom of the stew pot is a little high for the complete mesh of the gears. I can watch the pot raise and lower -- it turns about 25%"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 3.0,
+        "calibratedRating": 1.96,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "품질"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.0점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.09,
+          "euphemism": 0.36,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 0.15,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "These little pockets stick very well to the back of our RV seats. They did not stick very well to the vinyl on my car doors though."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 4.0,
+        "calibratedRating": 2.22,
+        "expressionType": "완곡한 불만",
+        "attributes": [],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 2.2점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.26,
+          "euphemism": 0.67,
+          "intensify": 0.9,
+          "modality": -0.54,
+          "subjectivity": 0.0,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "I’m not sure what happend but I had some roughness after drying. I shot four steel wheels with an hvlp gun, three coats, prepped well and applied according to directions. I had pretty high humidity and was Doing decently thick coats to get a good finish just like auto paint. Maybe wait for a dry day"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 2.0,
+        "calibratedRating": 2.42,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.4점).",
+        "expression": {
+          "directness": -0.19,
+          "euphemism": -0.17,
+          "intensify": 0.9,
+          "modality": -0.11,
+          "subjectivity": 0.04,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "My order arrived with the top screw missing. I contacted the seller and was mailed a new grinder after sending a photo of my missing screw. The grinder itself is not really useful for coffee. It takes a very long time to grind enough coffee for one pot. We will be using it for pepper. The frother do"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 5.0,
+        "calibratedRating": 3.26,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "높은 별점(5) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.3점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": -0.4,
+          "intensify": 0.08,
+          "modality": -0.54,
+          "subjectivity": -0.03,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Just received. The color purple is really nice"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 1.0,
+        "calibratedRating": 2.46,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "디자인",
+          "호환성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.5점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.02,
+          "euphemism": -0.08,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": -0.76,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "it didn't fit my car fx35 2007 .do you have the ones that fit"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 4.0,
+        "calibratedRating": 4.36,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "디자인",
+          "품질",
+          "사용성"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (4.4점).",
+        "expression": {
+          "directness": -0.23,
+          "euphemism": 0.59,
+          "intensify": 0.49,
+          "modality": 0.32,
+          "subjectivity": 0.35,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "This has been a good product. Helped my workflow and kept my pencil from rolling away on me. Comfortable to hold. Only negative is that it stretches out and now, 5 months later, is so loose I can’t write without it sliding up my pencil."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 2.0,
+        "calibratedRating": 2.72,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.7점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.27,
+          "euphemism": -0.04,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 0.19,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "i sit 2 feet away from this fan and i feel nothing. I threw both away"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 4.0,
+        "calibratedRating": 2.81,
+        "expressionType": "완곡한 불만",
+        "attributes": [],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 2.8점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.12,
+          "euphemism": -0.26,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": -0.01,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "They are a nice glass I use for coffee. No problems so far putting them in the microwave to reheat the coffee"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 1.0,
+        "calibratedRating": 2.06,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "배송"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.1점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.09,
+          "euphemism": 0.04,
+          "intensify": -0.34,
+          "modality": 0.58,
+          "subjectivity": -0.36,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "These do not snap tight; the lid just sits loosely on top of the container. Would not recommend for transporting food. I'm trying to get some use out of them by taping the lid closed."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 3.0,
+        "calibratedRating": 3.16,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "품질",
+          "디자인"
+        ],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.2점).",
+        "expression": {
+          "directness": 0.0,
+          "euphemism": -0.05,
+          "intensify": 0.49,
+          "modality": -0.54,
+          "subjectivity": 0.11,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Very cute, but the hinge on the back is not high quality."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 2.0,
+        "calibratedRating": 3.06,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "배송",
+          "품질"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.1점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.12,
+          "euphemism": 0.44,
+          "intensify": 0.19,
+          "modality": -0.54,
+          "subjectivity": 0.26,
+          "comparative": 1.38
+        },
+        "title": "",
+        "body": "The product itself is great however both items were received broken and thus rendering it useless. The shipper needs to package this better as the container is plastic and clearly not durable. My container was cracked in several places with the charcoal spilling out as soon as I removed the wrapping"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 5.0,
+        "calibratedRating": 4.65,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "가격",
+          "품질",
+          "배송"
+        ],
+        "translatedNote": "표면 별점(5)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (4.7점).",
+        "expression": {
+          "directness": 0.52,
+          "euphemism": -0.28,
+          "intensify": -0.23,
+          "modality": -0.54,
+          "subjectivity": 0.75,
+          "comparative": 1.38
+        },
+        "title": "",
+        "body": "Great product! Love how my key is the pink color and my husband has the black. Makes it a little easier to know which key belongs to who"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 1.0,
+        "calibratedRating": 3.07,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.1점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.58,
+          "euphemism": -0.37,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 1.03,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Did not extend my wifi"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 4.0,
+        "calibratedRating": 2.91,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "호환성"
+        ],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 2.9점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.16,
+          "euphemism": 0.25,
+          "intensify": 0.49,
+          "modality": -0.54,
+          "subjectivity": 0.23,
+          "comparative": 1.38
+        },
+        "title": "",
+        "body": "This spoon was much bigger than expected. Didn't work for my needs. But it's a solid spoon. Probably good for scooping herbs."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 1.0,
+        "calibratedRating": 2.47,
+        "expressionType": "속성 불만",
+        "attributes": [
+          "배송",
+          "가격",
+          "사용성"
+        ],
+        "translatedNote": "배송, 가격 속성에서 부정 감성이 강하게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "배송, 가격 속성의 부정 감성이 강해 보정 별점이 2.5점으로 낮아집니다.",
+        "expression": {
+          "directness": 0.23,
+          "euphemism": -0.07,
+          "intensify": 0.49,
+          "modality": 0.08,
+          "subjectivity": 0.32,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "I was not happy this this purchase. No matter how many attempts the case snaps on the side didn't work. I think it was defective. Also the stand isn't connected to the OtterBox. Poor design wish I would have returned now it just sits here. Waste of money. I have always used OtterBox for my devices b"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 2.0,
+        "calibratedRating": 2.31,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "가격",
+          "품질"
+        ],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.3점).",
+        "expression": {
+          "directness": 0.44,
+          "euphemism": -0.43,
+          "intensify": 0.49,
+          "modality": -0.54,
+          "subjectivity": 0.23,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "The light effect is not that good. Not worth the price of the item. Poorly made"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 3.0,
+        "calibratedRating": 2.83,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "호환성",
+          "품질",
+          "서비스"
+        ],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.8점).",
+        "expression": {
+          "directness": -0.07,
+          "euphemism": 0.14,
+          "intensify": 0.08,
+          "modality": -0.07,
+          "subjectivity": -0.06,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "My initial enthusiasm for the product has been tempered by the realization that the quality of the construction is just not there. The plastic cap is cheap and will certainly not last. Replacing the CO2 cartridges has been an expensive adventure in waste - the gasket in the cap was slightly mis-alig"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 3.0,
+        "calibratedRating": 2.3,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.3점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.08,
+          "euphemism": 0.2,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": -1.22,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "LEDs worked great for about 1 month. Then one quit working and the other started blinking. Replaced with filament bulbs and they worked."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 5.0,
+        "calibratedRating": 4.11,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "디자인",
+          "호환성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 4.1점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.0,
+          "euphemism": -0.58,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 0.53,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "They fit my van perfect love it it's going to give it a good look"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 5.0,
+        "calibratedRating": 3.18,
+        "expressionType": "완곡한 불만",
+        "attributes": [],
+        "translatedNote": "높은 별점(5) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.2점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": -0.14,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 0.78,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "These coasters are cool and work great"
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 1.0,
+        "calibratedRating": 2.18,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.2점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.45,
+          "euphemism": -0.52,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": -1.47,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "It stopped working after 2 days barely used just sat there."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 2.0,
+        "calibratedRating": 2.61,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "품질",
+          "호환성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.6점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.13,
+          "euphemism": -0.06,
+          "intensify": 0.08,
+          "modality": -0.54,
+          "subjectivity": -0.09,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "They seem well contructed but wiil not fit Abarth."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 4.0,
+        "calibratedRating": 3.58,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "품질",
+          "디자인"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.6점).",
+        "expression": {
+          "directness": -0.32,
+          "euphemism": 0.08,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 0.11,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Works fine and good looking except that coating on the metal is peeling."
+      },
+      {
+        "language": "EN",
+        "languageLabel": "English",
+        "originalRating": 3.0,
+        "calibratedRating": 2.85,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "영어 리뷰는 장단점을 직접 분리해서 진술하는 경향이 강합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.8점).",
+        "expression": {
+          "directness": -0.24,
+          "euphemism": 0.35,
+          "intensify": -0.34,
+          "modality": -0.54,
+          "subjectivity": 0.26,
+          "comparative": -0.42
+        },
+        "title": "",
+        "body": "Just got them today . They look nice as I'm taking them out of the package that was nicely closed with it's own zipper bag . There is a stain on them , I just took them out of there bag with clean hands . I haven't put them on my car yet"
+      }
+    ]
+  },
+  "ko": {
+    "summary": {
+      "language": "KO",
+      "languageLabel": "한국어",
+      "n_reviews": 50,
+      "star_summary": {
+        "observed_mean": 2.62,
+        "calibrated_mean": 2.92,
+        "delta": 0.3
+      },
+      "originalRatingDistribution": [
+        {
+          "stars": 5,
+          "count": 6,
+          "share": 12.0
+        },
+        {
+          "stars": 4,
+          "count": 7,
+          "share": 14.0
+        },
+        {
+          "stars": 3,
+          "count": 12,
+          "share": 24.0
+        },
+        {
+          "stars": 2,
+          "count": 12,
+          "share": 24.0
+        },
+        {
+          "stars": 1,
+          "count": 13,
+          "share": 26.0
+        }
+      ],
+      "calibratedRatingDistribution": [
+        {
+          "stars": 5,
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "stars": 4,
+          "count": 9,
+          "share": 18.0
+        },
+        {
+          "stars": 3,
+          "count": 28,
+          "share": 56.0
+        },
+        {
+          "stars": 2,
+          "count": 13,
+          "share": 26.0
+        },
+        {
+          "stars": 1,
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "attributeSatisfaction": [
+        {
+          "label": "가격",
+          "score": 50,
+          "mention_rate": 6.0
+        },
+        {
+          "label": "품질",
+          "score": 50,
+          "mention_rate": 8.0
+        },
+        {
+          "label": "배송",
+          "score": 50,
+          "mention_rate": 4.0
+        },
+        {
+          "label": "사용성",
+          "score": 50,
+          "mention_rate": 22.0
+        },
+        {
+          "label": "디자인",
+          "score": 50,
+          "mention_rate": 34.0
+        },
+        {
+          "label": "서비스",
+          "score": 50,
+          "mention_rate": 2.0
+        },
+        {
+          "label": "호환성",
+          "score": 50,
+          "mention_rate": 14.0
+        }
+      ],
+      "expressionTypes": [
+        {
+          "label": "혼합 감정",
+          "count": 24,
+          "share": 48.0
+        },
+        {
+          "label": "별점-텍스트 일치",
+          "count": 17,
+          "share": 34.0
+        },
+        {
+          "label": "완곡한 불만",
+          "count": 7,
+          "share": 14.0
+        },
+        {
+          "label": "숨은 만족",
+          "count": 2,
+          "share": 4.0
+        }
+      ],
+      "expression": {
+        "directness": 0.016,
+        "euphemism": -0.012,
+        "intensify": 0.157,
+        "modality": -0.551,
+        "subjectivity": -0.2,
+        "comparative": -0.23
+      },
+      "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다."
+    },
+    "reviews": [
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 4.0,
+        "calibratedRating": 3.98,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "사용성",
+          "호환성"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (4.0점).",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.01,
+          "intensify": -0.48,
+          "modality": -0.86,
+          "subjectivity": -0.05,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "키감도 부드러워 괜찮아요 스킨도 포함이 되어있고 만족해요 노트북에도 연결이 잘되고 잘 산듯해요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 2.53,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "가격",
+          "디자인"
+        ],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.5점).",
+        "expression": {
+          "directness": 0.39,
+          "euphemism": 0.31,
+          "intensify": 0.83,
+          "modality": 1.06,
+          "subjectivity": -0.06,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "사각 팬 땜에 구매했는데 품질이 썩 좋아 보이진 않네요. 별로 안 두껍고 코팅은 써 봐야 알겠어요. 뭐 프라이팬은 자주 갈아주는 게 좋다고들 해서 이번에도 저렴이로 구매했습니다. 쓰다 버리기에 별로 아쉽진 않습니다."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 5.0,
+        "calibratedRating": 4.01,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "사용성",
+          "호환성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 4.0점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": 0.05,
+          "intensify": 0.39,
+          "modality": -0.86,
+          "subjectivity": 0.29,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "일단 gps 수신이 상당히 빠르고 갈림길 안내도 빨라서 마음에 들어요 그리고 화면도 크니까 보기에도 시원하니 만족합니다. 상하단에 여러정보들이 있어서 좋은데 정작 건물에 와서 입구를 혼동하는 네비가 좀 아쉽네요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 2.78,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.8점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.04,
+          "intensify": -0.48,
+          "modality": -0.86,
+          "subjectivity": -1.24,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "이런 청소기는 정말 처음봐요 하루종일 충전해도 10분? 돌리고나면 꺼져요 지금 사용한지 딱 한달째 3~4초 돌리면 꺼지고 돌리면 꺼지고 반복되서 사용을 못하네요 이런걸 사용하라고 판매하는건지 ;;"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 2.1,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.1점).",
+        "expression": {
+          "directness": 0.23,
+          "euphemism": -0.06,
+          "intensify": 0.04,
+          "modality": 0.95,
+          "subjectivity": -1.86,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "OOO라 믿고 구매했는데 6월 30일 구매해서 한달동안 10회 정도 신었는데 발볼 부분에 철사가 삐져나와 신을 수가 없어요ㅠㅠ 품질이 정말 실망스럽네요."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 2.65,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "가격",
+          "배송",
+          "서비스"
+        ],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.6점).",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.23,
+          "intensify": -0.04,
+          "modality": -0.86,
+          "subjectivity": -0.52,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "적당한크기긴한데 열전도가 느린지 물끓이고하는데 좀 오래걸리는군요.그냥 싼맛입니다.시장 할인마트 잡화백화점에서도 같은것들 9,900원씩파는군요."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 3.17,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.2점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.19,
+          "euphemism": -0.02,
+          "intensify": -0.48,
+          "modality": -0.22,
+          "subjectivity": -0.31,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "열선아래에 있는 팬 코팅이 금방 벗겨졌어여 품질에 불만입니다. 두번째 사용하고 기름 닦는데 와 벗겨지는건지? 이거는 어디에 문의 드려야 하나요 문의하니깐 사용해서 교환은 어렵다네요 그닥 내구성은 좋지 않는듯합니다"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 2.03,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.0점).",
+        "expression": {
+          "directness": 1.0,
+          "euphemism": -0.32,
+          "intensify": -0.48,
+          "modality": -0.86,
+          "subjectivity": 0.29,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "간편하게 청소할때 괜찮아요 단점은 양손 다 사용 해야하고 그닥 비추"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 3.51,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "디자인",
+          "호환성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.5점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.23,
+          "intensify": 0.39,
+          "modality": 0.04,
+          "subjectivity": -0.17,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "2019년 제품이라서 구입 했어요. . . . 소음이 작으면 좀 괜찮을거 같은데 살짝 아쉬워요. 벽에다 붙이는거라서 편리는 해요 그건 마음에 들어요. 약간의 조금 아쉬움이 있어요."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 2.67,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "가격"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.7점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.03,
+          "euphemism": 0.11,
+          "intensify": 0.55,
+          "modality": -0.86,
+          "subjectivity": 0.22,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "음질은 별로여서 영화.음악감상용으로는 적합하지않고 단순 뉴스나 ㅇㅇㅇ용으로 쓰면 적당합니다. ㅇㅇㅇ정품에 비해서 품질도 다소 떨어지고 형편이 없어 실망입니다."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 2.09,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.1점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.67,
+          "euphemism": -0.2,
+          "intensify": -0.48,
+          "modality": 0.26,
+          "subjectivity": -0.34,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "파손 된 제품을 받았네요 ㅠ 포장좀 꼼꼼하게 검수해서 꼭 보내주세요 흡입력이 약해서 조리시 발생하는 연기가 잘 안빠짐."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 3.04,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.0점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.54,
+          "intensify": -0.04,
+          "modality": 0.26,
+          "subjectivity": 0.31,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "끈조절하는 마스크인데 생각보다 넘 작아요 얼굴 큰 사람은 쓰기 힘들어요 배송이 늦은거는 이해하지만 박스가 많이 훼손 되었네요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 5.0,
+        "calibratedRating": 3.37,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "높은 별점(5) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.4점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": 0.03,
+          "intensify": -0.04,
+          "modality": -0.86,
+          "subjectivity": 0.18,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "색상이 너무 예뻐서 마음에 쏙 듭니다. 조작 버튼도 터치 식이라 간편하고 좋네요."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 4.27,
+        "expressionType": "숨은 만족",
+        "attributes": [
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "중간 별점(3)이지만 강한 긍정 표현이 두드러짐",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현에서 긍정 신호가 강해 실제 만족도가 4.3점으로 높게 조정됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.58,
+          "intensify": -0.48,
+          "modality": -0.86,
+          "subjectivity": 0.31,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "스텐레스라 깔끔한 디자인이고 실용적으로 사용할 수 있을것 같네요. 손목에 부담 없이 쓸것 같아요 빠른 배송도 감사합니다."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 3.04,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.0점).",
+        "expression": {
+          "directness": -0.13,
+          "euphemism": 0.02,
+          "intensify": -0.48,
+          "modality": 1.12,
+          "subjectivity": -0.17,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "아직 사용 전이라 성능 확인은 못했고 써봐야 알겠네요. 깊이는 얕네요. 대신 둘레가 넓어서 토종 닭 한마리는 들어갈 사이즈라 맘에 듭니다."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 4.29,
+        "expressionType": "숨은 만족",
+        "attributes": [
+          "품질",
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "중간 별점(3)이지만 강한 긍정 표현이 두드러짐",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현에서 긍정 신호가 강해 실제 만족도가 4.3점으로 높게 조정됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": 0.09,
+          "intensify": -0.04,
+          "modality": -0.86,
+          "subjectivity": 0.54,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "디자인이 귀엽고 예쁘네요. 작동할 때 소음도 거의 없어서 만족하며 쓰고 있습니다"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 2.87,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.9점).",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.51,
+          "intensify": -0.04,
+          "modality": 1.59,
+          "subjectivity": -0.08,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "오래 사용했던 이전 제품보다 해상도가 너무 떨어져서 실망이예요. 메모리 용량도 너무 작고 그냥 더 고급형으로 살걸 그랬어요."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 4.0,
+        "calibratedRating": 3.05,
+        "expressionType": "완곡한 불만",
+        "attributes": [],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.0점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.14,
+          "intensify": -0.48,
+          "modality": -0.86,
+          "subjectivity": 0.22,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "외국산 패널 인데 해상도가 높아서 화질 좋은 게임용으로 만족스러워요 내장 스피커 음질은 기계음과 잡음이 섞여서 아쉽네요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 5.0,
+        "calibratedRating": 3.61,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "품질",
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.6점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.34,
+          "euphemism": 0.3,
+          "intensify": 0.99,
+          "modality": 0.02,
+          "subjectivity": 0.3,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "oooooo ooooo~ 손목이 아파서 칼로 힘주어 썰기가 많이 힘들었는데 이 제품은 뭐든지 손쉽게 갈려 편해요~ 성능이 좋아요. 사용법도 편리해서 잘 사용하고 있어요~"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 2.75,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.8점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.35,
+          "euphemism": -0.25,
+          "intensify": 0.04,
+          "modality": 0.8,
+          "subjectivity": 0.09,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "배송 빠르네요 쿠폰 써서 저렴하게 구매했네요 OOO로 찍은 사진은 화질이 기대보다 별로예요."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 2.51,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.5점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.11,
+          "euphemism": 0.08,
+          "intensify": -0.48,
+          "modality": 1.27,
+          "subjectivity": -0.93,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "2개 구매했는데 1개만 배송되고 누락되었어요.사과도 안하시고 대처가 최악이네요. 나중에 온 물건은 포장도 엉망으로해서 왔네요.이곳서는 구매안하렵니다. 배터리 사용시간이 짧아서 후회가 밀려와욧 저장용량이 작아서 옮기고 삭제하는게 불편하네요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 2.6,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.6점).",
+        "expression": {
+          "directness": -0.03,
+          "euphemism": -0.11,
+          "intensify": 0.04,
+          "modality": 0.6,
+          "subjectivity": -0.41,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "설치하는데 선이 너무 너저분하고 방향도 엉망이라 매립으로 할수가 없었어요...거기다 인식도 한번씩 안 되고 있으나 샀으니 일단 사용합니다. 완성도 떨어지는 이런제품을 만들어 팔다니 완전 정 떨어짐."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 2.68,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.7점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.12,
+          "euphemism": -0.22,
+          "intensify": -0.48,
+          "modality": -0.18,
+          "subjectivity": 0.26,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "염색을 한 두번 해본것도 아니고 구입하고 염색후 며칠이 지났는데 염색약 물빠짐이 계속되서 수건 쓰는것마다 색깔 변하고 이렇게 물빠짐 심한 염색약 첨봄 양많은 저거 어떻게 버리냐구여 아 짜증나요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 1.56,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "사용성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 1.6점으로 산출됩니다.",
+        "expression": {
+          "directness": 2.11,
+          "euphemism": 0.33,
+          "intensify": 0.55,
+          "modality": 0.83,
+          "subjectivity": -0.19,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "⭐️⭐️⭐️침대, 책상 주변에 설치하지 마세요 시끄러워서 두통와요⭐️⭐️⭐️ 소음 : 저는 소음에 민감해서 바로 옆에 있으면 좀 귀가 아프네요... 하지만 이정도 소음은 감수 해야 한다고 생각해요. 에어 서큘레이터 터보모드로 켜둔 소음정도 / 설치 : 나무형구형 창틀들은 그냥 기사님 미리 부르세요... 그리고 나름대로 저 자신이 힘 세다고 생각 했는데 들기도 힘들고 창문까지 못올려요. 설치 과정은 쉬우나 하기에는 힘이 많이들음. 설치 비용은 5만원 받으셨고 카드기 바쁘셔서 못가지고 다닌다 그러셔서 현금으로 드렸어요~ 참고하세요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 2.28,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.3점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.19,
+          "euphemism": 0.13,
+          "intensify": 0.55,
+          "modality": -0.15,
+          "subjectivity": -1.2,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "이걸 9만원에 살 품질은 절대 아님.. 약간 고무냄새인지 기름 냄새인지 특이한 냄새와 맛이 느껴짐 환경호르몬 먹는 느낌. 자동회전이라 안저어도되니 편하긴한데....버려야겠음ㅡㅡ;;;"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 2.98,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "품질",
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.0점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.3,
+          "euphemism": 0.06,
+          "intensify": -0.48,
+          "modality": -0.86,
+          "subjectivity": 1.44,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "디자인은 좋은데 재질이 싼티나고 엉성 카라부분이 매끄롭지 않음 일단 가성비로 좋음"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 2.78,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.8점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.01,
+          "intensify": -0.04,
+          "modality": 1.03,
+          "subjectivity": -0.37,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "상품 받고 처음 청소 하려고 부품을 연결했는데 연결부위가 찢어졌습니다. 당황스럽네요. 고무로 된 연결 부위가 너무 약하네요. 마감 처리가 영 ㅠ 상품 반품하고 싶네요 ㅠ"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 2.23,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.2점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.34,
+          "euphemism": 0.45,
+          "intensify": -0.48,
+          "modality": 0.95,
+          "subjectivity": -0.21,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "웍 프라이팬은 금방 코팅이 긁혀서 얼마 못 쓰고 버렸습니다. 그래도 나머지는 안 들러붙고 좋습니다."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 3.28,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "사용성"
+        ],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.3점).",
+        "expression": {
+          "directness": -0.08,
+          "euphemism": -0.12,
+          "intensify": -0.04,
+          "modality": 0.15,
+          "subjectivity": -1.29,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "가겨에 비해 불만족 입니다. 대기시간이 2시간 40분이라 했는데 실제 사용은 2시간도 안됩니다.제가 하루 만보 이상 걷는데 회사까지 거리가 1시간 20분 정도 걸립니다. 회사 도착하면 충전하라고 난립니다.그리고 첨 등록 할 때도 힘들었습니다.그냥 등록이 쉬운 저값 블루투스 이어폰이 훨씬 나을듯"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 4.0,
+        "calibratedRating": 3.23,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "배송",
+          "사용성"
+        ],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.2점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": 0.03,
+          "euphemism": 0.09,
+          "intensify": 1.27,
+          "modality": 0.49,
+          "subjectivity": -0.08,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "주문 한 지 하루 만에 배송 받아 너무 좋았고, 조립이 매우 쉬워 만족스럽습니다. 일주일 남짓 사용했는데 부팅 시간이 매우 빠르네요. 컴퓨터가 켜져 있는지 모를 정도로 정말 소음이 거의 없습니다. 동영상 강의 시청, 웹 서핑, 간단한 문서 작성 등만 해봤는데, 인터넷 페이지 넘어가는 속도나 각종 처리 속도가 빨라 기대 이상으로 만족스럽습니다."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 3.29,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.3점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.55,
+          "intensify": -0.04,
+          "modality": -0.86,
+          "subjectivity": 1.28,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "음 일단 내비 사용법이 너무 부족해서 조작하기 너무 힘들어요 ㅠㅠ 그리고 차가 크게 덜컹거리면 충격으로 지혼자 리부팅됩니다..진짜 짱나요~"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 2.28,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.3점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.31,
+          "euphemism": 0.06,
+          "intensify": -0.48,
+          "modality": -0.06,
+          "subjectivity": -0.81,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "밑에 분과 마찬가지로 진짜 품질이 일회용이네요 한번입었는데 보풀라기가 장난아니네요 이래가지고 집말고는 입고 나갈수가 없어요 좋은거 하나 사는게 나을듯여"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 2.26,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.3점).",
+        "expression": {
+          "directness": 0.05,
+          "euphemism": -0.36,
+          "intensify": -0.04,
+          "modality": 1.12,
+          "subjectivity": -1.95,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "1+1구매했는데 후회되네요. 바람 너무 약해요. 소음도 장난아니게 크구요."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 3.09,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.1점).",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.27,
+          "intensify": -0.06,
+          "modality": -0.86,
+          "subjectivity": 0.41,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "동영상 시청용으로 화질은 아주 만족요! 배경화면 다운로드 받을 메뉴가 없고, AOD기능 없어서 아쉽네요."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 4.0,
+        "calibratedRating": 2.72,
+        "expressionType": "완곡한 불만",
+        "attributes": [],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 2.7점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": 0.02,
+          "euphemism": 0.06,
+          "intensify": 0.55,
+          "modality": -0.86,
+          "subjectivity": 0.14,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "안테나,거치대 옵션이 없어서 아쉬워요... 그리고 타사제품은 호환도 안되게해서 실망입니다..."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 3.0,
+        "calibratedRating": 3.05,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.0점).",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.12,
+          "intensify": -0.48,
+          "modality": -0.24,
+          "subjectivity": 0.48,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "배송이 생각보다 빨리와서 좋네요. 태블릿 담긴 박스 내외부에 오염이 있어 기분 나빴어요 외형과 필름에 잔기스가 있지만 기능에는 문제가 없어 그냥 사용합니다 120도 전면 와이드 카메라가 있어서 내가 있는 공간까지 담을 수 있어 강추합니다"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 1.82,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 1.8점으로 산출됩니다.",
+        "expression": {
+          "directness": 1.15,
+          "euphemism": 0.15,
+          "intensify": -0.04,
+          "modality": -0.08,
+          "subjectivity": 0.57,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "처음으로 상품평 씁니다. 절대 사지마세요 저의 게으름으로 청소 편히 하려고샀는데 소리 엄청커서 별루이고 먼지 흡입도 안되고 바닥청소도 안되어 실망입니다 반품도 안되고 완전 짜증나요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 2.77,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.8점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.13,
+          "euphemism": -0.12,
+          "intensify": -0.48,
+          "modality": 0.26,
+          "subjectivity": -0.95,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "신발이 푹신하긴한데 가운데부분이 지지해주질못해서 오래 신을수가 없어요. 또 신발장 전시용신발이 하나 늘었네요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 5.0,
+        "calibratedRating": 4.02,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "품질",
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 4.0점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.23,
+          "intensify": -0.48,
+          "modality": -0.86,
+          "subjectivity": -1.37,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "화면 32인치에 4K라서 마음에 드는 해상도이네요. 밝기도 적당하고 디자인도 준수합니다. 괜찮은 가격으로 구매해서 기분이 좋네요."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 2.27,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.3점).",
+        "expression": {
+          "directness": 0.46,
+          "euphemism": -0.21,
+          "intensify": -0.48,
+          "modality": -0.21,
+          "subjectivity": -0.48,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "이거 진짜 싸구려 슬리퍼네요 샤이니가 이뻐서 삿는데 한번신고 신발 가장자리전체 접착부분이 다 떨어짐 어이가 없네요 오천원짜리도 한달이상 신을텐데 이건 모양만 핏플랍흉내낸 완전 싸구려신발이에요 교환반품도 안된다고. 어이없네요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 4.0,
+        "calibratedRating": 2.95,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 2.9점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": 0.21,
+          "euphemism": -0.19,
+          "intensify": 0.39,
+          "modality": -0.86,
+          "subjectivity": -0.0,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "밥솥 코드줄이 너무 짧아서 멀티탭 사용해야 되고 불편해요. 색상도 화면에서 본 거 보다 별로 안예쁘네요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 2.8,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.8점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.07,
+          "euphemism": 0.08,
+          "intensify": 0.39,
+          "modality": -0.86,
+          "subjectivity": 0.2,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "이번 행사로 좋은 가격에 구매해서 아주 좋아요~ 다만 노트북하고 모니터 색상매치가 안맞아서 그점이 조금 아쉽네요 ㅠㅠ"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 4.0,
+        "calibratedRating": 3.81,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "사용성",
+          "호환성"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.8점).",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": 0.48,
+          "intensify": -0.48,
+          "modality": 0.48,
+          "subjectivity": -0.04,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "사용해봤는데 주행이나 주차중에 녹화는 잘 되서 만족해요 자신없어서 설치는 비용주고하니 편하네요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 2.49,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.5점).",
+        "expression": {
+          "directness": 0.34,
+          "euphemism": -0.07,
+          "intensify": -0.04,
+          "modality": -0.86,
+          "subjectivity": 0.14,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "화면이 어두워서 그늘지거나 밤에는 안보여서 너무 별로예요ㅠ 가격도 너무 비싸네요ㅠ"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 5.0,
+        "calibratedRating": 2.96,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "높은 별점(5) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.0점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": 0.13,
+          "euphemism": 0.42,
+          "intensify": -0.48,
+          "modality": -0.86,
+          "subjectivity": 0.11,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "수납공간이 적어 생각보다 그릇이 많이 들어가지 않아요 큰 그릇은 아예 넣지도 못해서 아쉬워요. 그래도 스탠래스재질이라 깔끔해서 만족합니다. 그릇도 깨끗하게 건조가 되서 좋아요."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 5.0,
+        "calibratedRating": 3.47,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "높은 별점(5) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.5점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.27,
+          "intensify": -0.04,
+          "modality": -0.86,
+          "subjectivity": 0.48,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "자연스럽게 쥘 수 있어서 그립감이 좋아요 단, 전에쓰던것보다 무거운듯해서 그건 좀 아쉽네요"
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 2.46,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.5점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.55,
+          "euphemism": 0.37,
+          "intensify": -0.48,
+          "modality": 1.52,
+          "subjectivity": 0.13,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "디자인이 깔끔하고 예뻐서 좋아요. 작동시에 안에가 잘 보이지 않아 음식이 됐는지 안됐는지 확인이 안되 아쉬워요."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 4.0,
+        "calibratedRating": 4.06,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (4.1점).",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.23,
+          "intensify": -0.04,
+          "modality": -0.86,
+          "subjectivity": -0.5,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "테스트화면에서는 흑점이 3개정도 보인게 안타까워요 ㅜ 책상이 꽉차게 화면이 커서 아주 좋습니다."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 1.0,
+        "calibratedRating": 3.01,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.0점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.27,
+          "intensify": 0.91,
+          "modality": -0.86,
+          "subjectivity": 0.06,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "온풍기라면서 온풍기라고 말하기 민망할정도로 바람이 너무 약해요 제원설명도 제대로 없고.. 참..."
+      },
+      {
+        "language": "KO",
+        "languageLabel": "한국어",
+        "originalRating": 2.0,
+        "calibratedRating": 2.48,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "한국어 리뷰는 완곡한 어미와 양보 표현으로 아쉬움을 부드럽게 전달합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.5점).",
+        "expression": {
+          "directness": -0.21,
+          "euphemism": 0.41,
+          "intensify": 1.3,
+          "modality": 3.43,
+          "subjectivity": -0.12,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "오토 클리닝 기능이라 엄청 기대했는데 개뿔 무쓸모!!! 그리고 사은품으로 받은 청소기 사용하라고 주신건가요? 사은품 청소기가 해파필터 없이 왔네요. 당황;; 택배받고 바로 글올렸어야하는데 늦게 확인한 제잘못도있겠지만 이건 너무하잖아요. 사은품이라도 꼼꼼히 확인하시고 보내주셨음 좋았을텐데 이건 어찌쓰라는건지모르겠네요."
+      }
+    ]
+  },
+  "ja": {
+    "summary": {
+      "language": "JA",
+      "languageLabel": "日本語",
+      "n_reviews": 50,
+      "star_summary": {
+        "observed_mean": 2.92,
+        "calibrated_mean": 3.15,
+        "delta": 0.23
+      },
+      "originalRatingDistribution": [
+        {
+          "stars": 5,
+          "count": 8,
+          "share": 16.0
+        },
+        {
+          "stars": 4,
+          "count": 11,
+          "share": 22.0
+        },
+        {
+          "stars": 3,
+          "count": 10,
+          "share": 20.0
+        },
+        {
+          "stars": 2,
+          "count": 11,
+          "share": 22.0
+        },
+        {
+          "stars": 1,
+          "count": 10,
+          "share": 20.0
+        }
+      ],
+      "calibratedRatingDistribution": [
+        {
+          "stars": 5,
+          "count": 0,
+          "share": 0.0
+        },
+        {
+          "stars": 4,
+          "count": 20,
+          "share": 40.0
+        },
+        {
+          "stars": 3,
+          "count": 18,
+          "share": 36.0
+        },
+        {
+          "stars": 2,
+          "count": 12,
+          "share": 24.0
+        },
+        {
+          "stars": 1,
+          "count": 0,
+          "share": 0.0
+        }
+      ],
+      "attributeSatisfaction": [
+        {
+          "label": "가격",
+          "score": 50,
+          "mention_rate": 28.0
+        },
+        {
+          "label": "품질",
+          "score": 50,
+          "mention_rate": 32.0
+        },
+        {
+          "label": "배송",
+          "score": 50,
+          "mention_rate": 26.0
+        },
+        {
+          "label": "사용성",
+          "score": 50,
+          "mention_rate": 46.0
+        },
+        {
+          "label": "디자인",
+          "score": 50,
+          "mention_rate": 40.0
+        },
+        {
+          "label": "서비스",
+          "score": 50,
+          "mention_rate": 10.0
+        },
+        {
+          "label": "호환성",
+          "score": 50,
+          "mention_rate": 28.0
+        }
+      ],
+      "expressionTypes": [
+        {
+          "label": "혼합 감정",
+          "count": 27,
+          "share": 54.0
+        },
+        {
+          "label": "별점-텍스트 일치",
+          "count": 14,
+          "share": 28.0
+        },
+        {
+          "label": "완곡한 불만",
+          "count": 7,
+          "share": 14.0
+        },
+        {
+          "label": "강조형 긍정",
+          "count": 1,
+          "share": 2.0
+        },
+        {
+          "label": "숨은 만족",
+          "count": 1,
+          "share": 2.0
+        }
+      ],
+      "expression": {
+        "directness": -0.071,
+        "euphemism": -0.004,
+        "intensify": -0.101,
+        "modality": 1.212,
+        "subjectivity": -0.128,
+        "comparative": -0.23
+      },
+      "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다."
+    },
+    "reviews": [
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 5.0,
+        "calibratedRating": 3.7,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "품질",
+          "사용성",
+          "호환성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.7점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.11,
+          "euphemism": 0.1,
+          "intensify": -0.31,
+          "modality": 1.56,
+          "subjectivity": 0.1,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "音質は十分でした。マグネットがついているので、使わないときはくっつけて首から下げていられます。非常に便利です。コードレスにして良かったです。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 2.0,
+        "calibratedRating": 3.69,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "가격",
+          "품질",
+          "사용성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.7점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.11,
+          "euphemism": -0.02,
+          "intensify": -0.31,
+          "modality": -0.31,
+          "subjectivity": 0.19,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "2ヶ月半で温度が保てなくなりました。 可愛いので気に入って使っていたので、残念です。レビューを見ると当たり外れが大きいですね。 柔らかさは申し分なし。 ただ重いです。同じ大きさの湯たんぽより重いと思います。 買い替えを悩み中。お湯を替えていた事を思うと、蓄電式はやっぱり便利。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 1.0,
+        "calibratedRating": 2.81,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "가격",
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.8점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.3,
+          "euphemism": -0.19,
+          "intensify": 3.31,
+          "modality": 0.56,
+          "subjectivity": -0.22,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "H11タイプを購入しました。 安さと8000lmに惹かれて購入しましたが... 到着後、装着を楽しみにしていましたが、取り付けしたら片側が薄っすらしか点灯しない不良品... 不良品じゃない方も、今まで付けていたledと比較してもあまり明るいとは感じませんでした.. ガッカリです"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 1.0,
+        "calibratedRating": 2.46,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.5점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.14,
+          "euphemism": 0.28,
+          "intensify": 0.35,
+          "modality": 1.12,
+          "subjectivity": -0.14,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "水もセットしてUSBに挿して使おうと思ったのですが、ONを押しても何処を押しても全く反応しません。 買った意味がなくとても残念です。 評価出来ないので★も入れたくなかったですが入れないと投稿出来ないので★は一つです。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 3.0,
+        "calibratedRating": 2.49,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.5점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.13,
+          "euphemism": 0.15,
+          "intensify": -0.31,
+          "modality": -0.78,
+          "subjectivity": -0.16,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "ホワイトを在庫ありで購入したが納期日になっても一切の連絡なし、こちらから連絡したらホワイトは在庫切れで１ヶ月近く待ちとのことで仕方がなく在庫ありのピンクで再注文となった。何度もAmazonで購入しているが今回の対応の悪さには、がっかりした。 商品については花粉が飛散しているので外に布団が干せない毎日ですので欠かせません、又寒い日には布団に入る前に１０分ぐらい温めて置くと快適に休むことができありがたいです。 商品には問題ないがAmazonの対応が悪かったので星３です。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 2.0,
+        "calibratedRating": 2.46,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.5점).",
+        "expression": {
+          "directness": -0.1,
+          "euphemism": 0.61,
+          "intensify": -0.31,
+          "modality": 0.65,
+          "subjectivity": -0.05,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "明るさも綺麗さも言う事なしでしたが 半年で2個とも切れました 3年保証ってあるけど どこに言うのか明記されてない"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 5.0,
+        "calibratedRating": 4.0,
+        "expressionType": "강조형 긍정",
+        "attributes": [
+          "가격",
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "느낌표·반복으로 강조된 강한 만족",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "강조 표현(느낌표·반복)이 많아 보정 별점이 4.0점으로 높게 유지됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": 0.13,
+          "intensify": 1.53,
+          "modality": 0.18,
+          "subjectivity": 0.85,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "レビューではいい評価もあればあまり良くない評価もあり、買って届くまで不安でした。ですが届いて使ってみると使い方も簡単ですぐに接続できました。音質も良く、耳の穴の小さい私にはフィットしました。本体もとても軽く気に入りました。これから沢山使っていきたいと思います。買って良かったです！"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 1.0,
+        "calibratedRating": 2.34,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "배송",
+          "서비스"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.3점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.08,
+          "euphemism": 0.04,
+          "intensify": -0.31,
+          "modality": 0.42,
+          "subjectivity": -0.19,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "簡素な梱包に貼られたシールには注文したものが印刷されていたが中身は別物が届いた（多分ファーウェイ） 万屋というところに商品交換の連絡を入れてもよいが面倒なのでAmazonの返品を使い返品した。 お急ぎ便を使いその日に使用予定だっただけに残念でならない。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 3.0,
+        "calibratedRating": 3.07,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "사용성",
+          "서비스",
+          "호환성"
+        ],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.1점).",
+        "expression": {
+          "directness": 0.33,
+          "euphemism": 0.09,
+          "intensify": 0.67,
+          "modality": -0.31,
+          "subjectivity": -0.09,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "返品日の次の日に発見して返品もできず・・・ 購入した人はチェックしたほうが良いですね。 まだ、キャンプでは使用してませんが大きさなども扱いやすいと思うので、そのへんは良いかなと。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 4.0,
+        "calibratedRating": 2.03,
+        "expressionType": "완곡한 불만",
+        "attributes": [],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 2.0점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": 0.81,
+          "euphemism": 0.18,
+          "intensify": -0.31,
+          "modality": 1.24,
+          "subjectivity": -0.33,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "手挽きにしようかどうか迷いましたが、電動ミルにして正解でした。一人の少量の豆なので綺麗に挽けます。お掃除が面倒ですが4分待つ間に済ませます。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 5.0,
+        "calibratedRating": 2.73,
+        "expressionType": "완곡한 불만",
+        "attributes": [],
+        "translatedNote": "높은 별점(5) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 2.7점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.18,
+          "euphemism": -0.08,
+          "intensify": 0.87,
+          "modality": -1.03,
+          "subjectivity": 0.08,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "今年の夏用に早く購入しました。弱、中、強の三段階から風量を調節することができます。風量も想像以上とても軽くて持ち運ぶのも全然問題ないです。夏の時役を立つには相違ないと思います！"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 2.0,
+        "calibratedRating": 2.9,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "사용성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.9점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.66,
+          "euphemism": -0.05,
+          "intensify": -0.31,
+          "modality": -0.5,
+          "subjectivity": -0.32,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "手元の家電・PCの測定したく購入しました。 Bluetooth接続でPC、スマホからデータを見れるというのが購入の決めてです。 PCは未確認ですがiOSアプリは現行のiOS12に対応されておらず、操作不能になるなどバグまみれです。 データはちゃんと取れているのでアプリの挙動について新しいiOSに合うようにアプリのアップデートをしてください。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 4.0,
+        "calibratedRating": 2.42,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "가격"
+        ],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 2.4점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": -0.16,
+          "euphemism": 0.14,
+          "intensify": -0.31,
+          "modality": 0.53,
+          "subjectivity": -0.2,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "一応 交換して匂いはなくなり 風量も増えました。 交換しないよりはした方がいいと思うので、おススメです。 当方花粉症ですが、花粉症の時期になってもクシャミが減った様に思います。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 3.0,
+        "calibratedRating": 3.57,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.6점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.38,
+          "intensify": 1.01,
+          "modality": 1.66,
+          "subjectivity": 1.15,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "いたって普通でした。 ただ、色は真っ赤でとても綺麗です。 思いのほか弱そうです。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 2.0,
+        "calibratedRating": 2.34,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [],
+        "translatedNote": "표면 별점(2)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.3점).",
+        "expression": {
+          "directness": 0.22,
+          "euphemism": 0.25,
+          "intensify": 0.35,
+          "modality": -0.94,
+          "subjectivity": -0.12,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "18650を左右にセットしても0.5A以外でしか充電されない。 熱を発しないという点では良いかもしれないが、いつまでもチンタラ遅すぎ。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 2.0,
+        "calibratedRating": 3.95,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "품질",
+          "사용성",
+          "호환성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.9점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": 0.14,
+          "intensify": 0.2,
+          "modality": 0.53,
+          "subjectivity": 0.25,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "ホームボタンの反応が悪いし タッチ機能もイマイチでした！ とりあえずは使えてるの良いです。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 4.0,
+        "calibratedRating": 4.07,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "가격",
+          "품질",
+          "배송"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (4.1점).",
+        "expression": {
+          "directness": 0.1,
+          "euphemism": -0.03,
+          "intensify": -0.31,
+          "modality": 0.86,
+          "subjectivity": 0.03,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "仕事柄長時間ＰＣ作業が続くので疲れないマウスパッドをと思い購入。狙い通り手首がすごく楽になりました。形自体も無駄な部分はカットされているためデスク上が有効的に使えます。デザイン的には特別オシャレとかはないのですが逆にシンプルでよいと思います。底面の滑り止めも確りと機能しているのでずれません。特に不満はありませんがあとは耐久性はでまだ分かりません。安いのでダメになったらまた買えばいいと考えています。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 3.0,
+        "calibratedRating": 3.8,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.8점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.2,
+          "euphemism": 0.07,
+          "intensify": 1.38,
+          "modality": 1.2,
+          "subjectivity": 0.42,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "小さくてどこにでも置けます！見た目も可愛らしい♡ただ小さい傷が少しありました💦 後は加湿の量は調節できませんが多すぎず少なすぎずって感じです！"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 1.0,
+        "calibratedRating": 2.68,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.7점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.1,
+          "euphemism": -0.03,
+          "intensify": 0.72,
+          "modality": -1.18,
+          "subjectivity": 0.15,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "最初 問題なく使えたけど、昨夜から おかしくなってきて、今 昔古いUSB2.0ケースを使ってる！もう Oricoの製品を二度も買わない！"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 5.0,
+        "calibratedRating": 4.24,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "가격",
+          "품질",
+          "배송"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 4.2점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.14,
+          "euphemism": 0.13,
+          "intensify": 0.87,
+          "modality": 0.35,
+          "subjectivity": 0.09,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "映画を見ることを大好きですが家でも映画館みたいな感じを作りたいです。色々なを探しました。こちらの商品を購入しました。 届いて使ってみましたが、画質がとても綺麗で、解像度も高いので、細部まで綺麗に写り機能性の高さに大変満足しました！ 電気を点けても見ることができるぐらいには光量があります。 リモコンも付いていて、台形補正やフォーカス調整も簡単にできます。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 4.0,
+        "calibratedRating": 3.65,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "사용성",
+          "호환성"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.7점).",
+        "expression": {
+          "directness": -0.23,
+          "euphemism": 0.25,
+          "intensify": 0.35,
+          "modality": -0.89,
+          "subjectivity": -0.02,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "GTX970がそろそろ引退時期と判断し3万円で足りるこちらを選択 低負荷～中負荷までなら高温にならずファンの音も静か（用途や環境で変化あり） 玄人志向が一番安いけどファンに貼ってあるシールが好きではないので2番目に安いこちらを購入 フルHDの標準画質設定なら大抵のゲームが出来るはず ちはやローリングはランクSS（GTX1060がSランクなので少し性能アップしてます）"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 4.0,
+        "calibratedRating": 3.72,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "가격",
+          "품질",
+          "배송"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.7점).",
+        "expression": {
+          "directness": 0.06,
+          "euphemism": -0.35,
+          "intensify": -0.31,
+          "modality": -0.76,
+          "subjectivity": -0.33,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "前回も、同じ商品を購入してます、明るさ、残光システムには、満足していますが、長持ち、耐久性には少し考えるところがあるが、価格的に満足しています。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 4.0,
+        "calibratedRating": 3.29,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "배송",
+          "사용성",
+          "서비스"
+        ],
+        "translatedNote": "높은 별점(4) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 3.3점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": 0.39,
+          "euphemism": -0.64,
+          "intensify": -0.31,
+          "modality": 0.28,
+          "subjectivity": -0.5,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "全て納得してます。ドライブレコーダーに使用. 送料無料は大変助かります。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 3.0,
+        "calibratedRating": 3.41,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "가격",
+          "배송",
+          "사용성"
+        ],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.4점).",
+        "expression": {
+          "directness": -0.19,
+          "euphemism": 0.16,
+          "intensify": -0.31,
+          "modality": -0.44,
+          "subjectivity": 0.01,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "全般的には値段も含めて気に入っています。ただこのメモリー内のフォルダ間のデータ移動が出来ないので、一度iPADに移してから別のフォルダに移すしか無いのが面倒で残念です。直接移動出来る様にアプリをアップデートして欲しいです。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 1.0,
+        "calibratedRating": 2.39,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.4점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.03,
+          "euphemism": -0.01,
+          "intensify": -0.31,
+          "modality": -0.74,
+          "subjectivity": -0.5,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "充電すると、［充電エラー］というメッセージが流れた。何度試してもダメだった。原因は不明のままで、廃棄するのも不便です。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 2.0,
+        "calibratedRating": 2.59,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.6점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.08,
+          "euphemism": -0.02,
+          "intensify": -0.31,
+          "modality": -1.51,
+          "subjectivity": 0.23,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "冷風にしても涼しい風はこない、氷を入れてもほんの数分冷風になるだけ。暑い日に冷風欲しかったのに期待外れ"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 3.0,
+        "calibratedRating": 2.47,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.5점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.07,
+          "euphemism": 0.22,
+          "intensify": -0.31,
+          "modality": -0.48,
+          "subjectivity": -0.13,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "スパシャンシリーズをいろいろ購入していますが、どれくらいの量を使用するのか水をどれだけ入れたらいいのかという記載がほとんどないのでYouTubeやネットで調べたりしないといけないので記載してほしいと言う事でこの評価にしました。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 4.0,
+        "calibratedRating": 4.49,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "사용성",
+          "호환성"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (4.5점).",
+        "expression": {
+          "directness": -0.01,
+          "euphemism": 0.38,
+          "intensify": -0.31,
+          "modality": 0.07,
+          "subjectivity": 3.46,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "自分で交換が出来るので特に問題はありません。ただ、自分が気に入っているだけです。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 2.0,
+        "calibratedRating": 3.15,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.2점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.19,
+          "euphemism": 0.03,
+          "intensify": -0.31,
+          "modality": -0.59,
+          "subjectivity": 0.94,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "内部に柔軟性が無く、太い方は入らないかと思います。普通サイズでもゴリゴリします。無理に入れると痛いです。回転数の高いモーターからの振動が、硬いシリコンを伝わって来ますので、使用感は意見の別れるところ。ちなみに私はコレでは無理です。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 5.0,
+        "calibratedRating": 2.49,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "디자인"
+        ],
+        "translatedNote": "높은 별점(5) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 2.5점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": 0.38,
+          "euphemism": 0.14,
+          "intensify": 0.2,
+          "modality": 0.28,
+          "subjectivity": -0.5,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "エステでの光脱毛は輪ゴムでパチン！とされるくらいの痛みがありましたが、こちらはほとんどありません。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 1.0,
+        "calibratedRating": 3.79,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "가격",
+          "배송",
+          "사용성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.8점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.13,
+          "euphemism": -0.5,
+          "intensify": 0.35,
+          "modality": 0.83,
+          "subjectivity": 0.23,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "良く見ずに購入してしまい、物が来たら、失敗したと思いました。同じもので安い物を再度購入しました、安い方が全然良い時もあるみたいです。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 4.0,
+        "calibratedRating": 3.59,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.6점).",
+        "expression": {
+          "directness": -0.09,
+          "euphemism": -0.12,
+          "intensify": -0.31,
+          "modality": -0.64,
+          "subjectivity": -0.27,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "XPERIAのパープルが好きでカバーを探していてこちらを購入しました。 ボタンも押しやすい。耐久性はもうしばらく使用してみないと…"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 2.0,
+        "calibratedRating": 2.53,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.5점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.06,
+          "euphemism": -0.07,
+          "intensify": -0.31,
+          "modality": 0.67,
+          "subjectivity": -0.11,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "ミュートに出来ないのが、残念ですね。 YouTubeLIVE配信してる時に、困ります。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 4.0,
+        "calibratedRating": 3.98,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "품질",
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (4.0점).",
+        "expression": {
+          "directness": -0.2,
+          "euphemism": 0.09,
+          "intensify": -0.31,
+          "modality": -0.58,
+          "subjectivity": -0.14,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "ホームセンターで見かけて、気に入りました。２倍拡大は「こんなものか？」と思いましたが、作業し始めると、そのありがたさを実感。ライトも明るいので、尚更見やすいです。 ４倍拡大ルーペは確かにいいのですが、拡大鏡が小さいので、片目で見ながらの作業になります。 もう少し大きな拡大鏡にするか、拡大鏡の差し替えなど、更に改良されることを期待します。 全体としては、満足です。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 1.0,
+        "calibratedRating": 2.37,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "가격",
+          "품질",
+          "배송"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.4점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.59,
+          "euphemism": -0.01,
+          "intensify": 0.35,
+          "modality": 0.3,
+          "subjectivity": -0.19,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "偽物が出回っているようなので、よく見て購入しましたが、写真と実際に届いた商品が違いました。 商品画像にはBITE HELPER.comと記載されていますが、届いた商品には.comの文字がなく、プリントもかすれていて、本物かどうかとても疑わしく、その旨を伝えたところ返品になりました。 火傷？をされた方もいるようですし、購入はおススメ出来ません。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 3.0,
+        "calibratedRating": 3.8,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "품질",
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.8점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.25,
+          "euphemism": -0.07,
+          "intensify": -0.31,
+          "modality": -1.28,
+          "subjectivity": -0.07,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "新居に使う照明機器を探していて見つけた商品。届いて早速自宅廊下のLED電球と交換したが、オーム電機製330ルーメンの電球よりも暗く感じる。廊下、トイレなら間に合うが、寝室やリビングには60W相当の電球を2～3本追加したい。 音は廊下の壁に反響して、意外に悪くない。アプリでイコライズできるが、数曲試してフラットが最も聴きやすかった。残念なのは、モノラルではなく、ステレオのLチャンネルしか鳴らないこと。部屋で使うなら、普段使いのスマホではなく、制御用のタブレット等にあらかじめモノラルに変換した音源を入れておくのが良いだろう。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 2.0,
+        "calibratedRating": 2.56,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.6점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": -0.08,
+          "intensify": -0.31,
+          "modality": -0.32,
+          "subjectivity": -0.5,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "二穴のやつをかうべきでした＾＾； スマホ電源とゴープロ用電源がいるから。とほほ＾＾；"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 5.0,
+        "calibratedRating": 2.48,
+        "expressionType": "완곡한 불만",
+        "attributes": [
+          "배송"
+        ],
+        "translatedNote": "높은 별점(5) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 2.5점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": 0.36,
+          "euphemism": -0.08,
+          "intensify": -0.31,
+          "modality": 0.28,
+          "subjectivity": -0.5,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "長時間渋滞での車内でも重宝します。今後は全然心配いらなくて安心に使えます。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 1.0,
+        "calibratedRating": 2.67,
+        "expressionType": "혼합 감정",
+        "attributes": [],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.7점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.17,
+          "euphemism": -0.34,
+          "intensify": -0.31,
+          "modality": -0.41,
+          "subjectivity": 0.53,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "フィットしない。重い。どんなに拭いても油膜感がある。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 4.0,
+        "calibratedRating": 3.63,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "가격",
+          "품질",
+          "사용성"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.6점).",
+        "expression": {
+          "directness": 0.1,
+          "euphemism": 0.14,
+          "intensify": -0.31,
+          "modality": 0.08,
+          "subjectivity": 0.46,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "私は母用に購入しました。そして、両タイプは本当に便利ですし、電気代も財布に優しいのが気に入りました。母は、柄が気に入ったようで朝から夜まで使ってます。ただ、肌触りが良いと言うことは、毛玉が出来ます。そこだけ残念ですがそれ以上に軽量で使い勝手が良いので毛玉は気にしないことにしました。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 1.0,
+        "calibratedRating": 3.02,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "배송"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.0점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": 0.15,
+          "intensify": -0.31,
+          "modality": 3.04,
+          "subjectivity": -0.04,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "届いた時の箱がボロボロで心配になりましたが、中身は綺麗だったので使用しました。しかし約2週間で剥がれました。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 2.0,
+        "calibratedRating": 2.88,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "품질",
+          "배송"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.9점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": 0.35,
+          "intensify": -0.31,
+          "modality": 0.21,
+          "subjectivity": -0.3,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "手持ちのプリセット型で計測オーバー箇所があり、Nf仕様を購入したつもりだが、届いたものは残念ながらNm仕様だった。実はヤフオクで1週間前に購入したものと同じパターンだったので、もうあきらめて換算して使用することにした。どちらも届くのは速かったが、今回はスカだった。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 3.0,
+        "calibratedRating": 2.81,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "배송"
+        ],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (2.8점).",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": 0.01,
+          "intensify": -0.31,
+          "modality": 0.53,
+          "subjectivity": -0.5,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "天地無用の商品ですが、逆さまの状態で荷札が貼ってあり配送されました。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 3.0,
+        "calibratedRating": 3.72,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "가격",
+          "품질",
+          "사용성"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 3.7점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.06,
+          "euphemism": -0.12,
+          "intensify": -0.31,
+          "modality": -0.05,
+          "subjectivity": -0.38,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "高級感を期待して購入しました。 車のレザーシートによく馴染んでいます。 高級感を期待する方にはおすすめです。 ただＢＭＷのロゴが若干ずれていました。 値段的もそこれなりにするだけに、残念でした。 使用には問題ありません。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 5.0,
+        "calibratedRating": 2.57,
+        "expressionType": "완곡한 불만",
+        "attributes": [],
+        "translatedNote": "높은 별점(5) 안에 완곡한 부정 신호 포함",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "완곡한 부정 표현이 다수 포함되어 실제 만족도는 2.6점으로 낮게 조정됩니다.",
+        "expression": {
+          "directness": 0.1,
+          "euphemism": -0.35,
+          "intensify": 0.2,
+          "modality": -0.74,
+          "subjectivity": -0.07,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "人知れず、「ムフフ…いいね！」と悦に入っております。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 5.0,
+        "calibratedRating": 4.13,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "품질",
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 4.1점으로 산출됩니다.",
+        "expression": {
+          "directness": 0.01,
+          "euphemism": -0.54,
+          "intensify": -0.31,
+          "modality": 0.14,
+          "subjectivity": 0.1,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "【使用場所】脱衣所・洗面所【パワー】思った以上にすぐに温まります。【デザイン】シンプルで良いです。【サイズ】小さくて邪魔にならない大きさです。【静音性】そこそこしますが、こんなもんだろうという感じです。【安全性】燃料を燃やしませんので良いと。【その他】タイマー機能がほしいです"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 1.0,
+        "calibratedRating": 2.53,
+        "expressionType": "혼합 감정",
+        "attributes": [
+          "가격"
+        ],
+        "translatedNote": "긍정·부정 표현이 섞여 있음",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "긍정·부정 표현이 혼재되어 보정 별점이 2.5점으로 산출됩니다.",
+        "expression": {
+          "directness": -0.3,
+          "euphemism": 0.31,
+          "intensify": 0.2,
+          "modality": -1.73,
+          "subjectivity": 0.25,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "買って１年で拭き残りが出て又変え時かな？ 高かったのに！残念品"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 2.0,
+        "calibratedRating": 4.25,
+        "expressionType": "숨은 만족",
+        "attributes": [
+          "품질",
+          "배송",
+          "사용성"
+        ],
+        "translatedNote": "중간 별점(2)이지만 강한 긍정 표현이 두드러짐",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현에서 긍정 신호가 강해 실제 만족도가 4.2점으로 높게 조정됩니다.",
+        "expression": {
+          "directness": -0.18,
+          "euphemism": -0.09,
+          "intensify": -0.31,
+          "modality": 0.78,
+          "subjectivity": -0.37,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "商品自体の取り付けは問題なし。ただ、スキーを乗せましたがバンドで固定しても左右にグラグラします、相当グラグラしますこんなもんなんですかね？なので、バンドが外れないように、ねじりっこで固定して使ってます。"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 4.0,
+        "calibratedRating": 3.82,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "품질",
+          "사용성",
+          "디자인"
+        ],
+        "translatedNote": "표면 별점(4)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.8점).",
+        "expression": {
+          "directness": -0.05,
+          "euphemism": -0.27,
+          "intensify": 0.67,
+          "modality": -0.78,
+          "subjectivity": -0.11,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "約10年使った最廉価デスクトップPCから切り替え。ＷＩＮ７でブルースクリーン連発していました。 今回初めての組立で組立簡単初心者向けの評判で購入。ATHLON200GEでコスパ仕様です。 WIFI純正オプとサードパーティＵＳＢ増設（変換名人）DDR4 2666 4GB×2 SATAssd120GB等。 確かに組立簡単、初心者向けでした。youtubeお手本に迷うことなく仕上がりました。 液晶ＴＶにＨＤＭＩ接続、10年落ちPCモニターにVGA接続、モニターは小さいので縦置きして、マルチスクリーンを楽しんでいます。 FANコンが調整できないので☆－１です。（静かですけどね）"
+      },
+      {
+        "language": "JA",
+        "languageLabel": "日本語",
+        "originalRating": 3.0,
+        "calibratedRating": 3.18,
+        "expressionType": "별점-텍스트 일치",
+        "attributes": [
+          "가격",
+          "품질",
+          "디자인"
+        ],
+        "translatedNote": "표면 별점(3)과 텍스트 감성이 일관되게 나타남",
+        "languagePattern": "일본어 리뷰는 정중한 표현 안에 약화된 부정 신호를 자주 포함합니다.",
+        "reason": "표현 신호가 별점과 일치해 보정 폭이 작습니다 (3.2점).",
+        "expression": {
+          "directness": -0.11,
+          "euphemism": 0.07,
+          "intensify": 1.01,
+          "modality": -0.28,
+          "subjectivity": 0.08,
+          "comparative": 0.0
+        },
+        "title": "",
+        "body": "エイプ50の社外品レンズカットベーツライトに取り付けしました。 ロービームは使い物にならない程の明るさ(画像ではかなり明るく見える) ハイビームはまぁまぁの明るさ。(本来のロービームの明るさぐらい) 仕方がないのでハイビームでライト位置を下げて使用する事にします バッテリーレスなので仕方がないと思いますが 通常時のチラつきがあります 若干ですがウィンカーを出すとロービームが連動して点滅します。 LED6発ならまだマシだったかな？といった感じです。 価格は安いので満足でダメになったら6発もためしてみようかな？"
+      }
+    ]
+  },
+  "cross_language": {
+    "expression_global": {
+      "en": {
+        "directness": 0.132,
+        "euphemism": -0.011,
+        "intensify": 0.024,
+        "modality": -0.656,
+        "subjectivity": 0.242,
+        "comparative": 0.461
+      },
+      "ko": {
+        "directness": -0.051,
+        "euphemism": 0.016,
+        "intensify": 0.136,
+        "modality": -0.539,
+        "subjectivity": -0.098,
+        "comparative": -0.23
+      },
+      "ja": {
+        "directness": -0.08,
+        "euphemism": -0.006,
+        "intensify": -0.16,
+        "modality": 1.195,
+        "subjectivity": -0.144,
+        "comparative": -0.23
+      }
+    },
+    "calibration_delta": {
+      "en": -0.004,
+      "ko": 0.0,
+      "ja": 0.0
+    }
+  }
+}
