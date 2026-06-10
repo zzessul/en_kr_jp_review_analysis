@@ -1,5 +1,6 @@
 import CalibrationPanel from "./components/CalibrationPanel";
 import Header from "./components/Header";
+import LiveReviewAnalysis from "./components/LiveReviewAnalysis";
 import ProductCard from "./components/ProductCard";
 import ReviewCard from "./components/ReviewCard";
 import ReviewFilters from "./components/ReviewFilters";
@@ -24,6 +25,7 @@ export default function App() {
         </div>
 
         <section id="reviews" className="mt-6 space-y-4">
+          <LiveReviewAnalysis />
           <ReviewFilters />
           <div className="space-y-4">
             {reviews.map((review) => (

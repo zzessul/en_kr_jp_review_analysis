@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+pydantic
+numpy
+scipy
+pandas
+scikit-learn
+sentence-transformers
+spacy
+kiwipiepy
+fugashi[unidic-lite]
+vaderSentiment
+torch
