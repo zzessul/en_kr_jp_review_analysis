@@ -60,6 +60,7 @@ const colors = [
 
 export default function ProductCard() {
   const [isFavorite, setIsFavorite] = useState(false);
+  const [isAddedToCart, setIsAddedToCart] = useState(false);
   const [selectedView, setSelectedView] = useState(0);
   const [selectedColorName, setSelectedColorName] = useState(colors[0].name);
   const selectedColor = colors.find((color) => color.name === selectedColorName) ?? colors[0];
@@ -67,129 +68,140 @@ export default function ProductCard() {
 
   return (
     <section className="grid gap-6 rounded-lg bg-white p-5 shadow-soft lg:grid-cols-[minmax(360px,470px)_minmax(0,1fr)] xl:grid-cols-[minmax(380px,480px)_minmax(0,1fr)_260px]">
-      <div className="grid min-w-0 gap-3 sm:grid-cols-[74px_minmax(0,1fr)]">
-        <div className="order-2 grid grid-cols-4 gap-2 sm:order-1 sm:grid-cols-1">
-          {productViews.map((view, index) => (
-            <button
-              key={view.label}
-              type="button"
-              onClick={() => setSelectedView(index)}
-              aria-label={`${view.label} 제품 사진 보기`}
-              className={`aspect-square overflow-hidden rounded-md border bg-white p-1 transition ${
-                selectedView === index ? "border-amber-400 ring-2 ring-amber-100" : "border-slate-200 hover:border-slate-400"
-              }`}
-            >
-              <img src={selectedColor.images[view.key]} alt="" className="h-full w-full object-contain" />
-            </button>
-          ))}
-        </div>
-
-        <div className="order-1 rounded-lg border border-slate-200 bg-white p-4 sm:order-2">
-          <div className="flex aspect-square max-h-[520px] items-center justify-center overflow-hidden rounded-lg bg-white shadow-inner">
-            <img
-              src={selectedColor.images[selectedProductView.key]}
-              alt={`SoundMax AirBeat Pro 무선 노이즈 캔슬링 이어버드 ${selectedProductView.label} 사진`}
-              className="h-full w-full object-contain transition duration-300"
-            />
+        <div className="grid min-w-0 gap-3 sm:grid-cols-[74px_minmax(0,1fr)]">
+          <div className="order-2 grid grid-cols-4 gap-2 sm:order-1 sm:grid-cols-1">
+            {productViews.map((view, index) => (
+              <button
+                key={view.label}
+                type="button"
+                onClick={() => setSelectedView(index)}
+                aria-label={`${view.label} 제품 사진 보기`}
+                className={`aspect-square overflow-hidden rounded-md border bg-white p-1 transition ${
+                  selectedView === index ? "border-amber-400 ring-2 ring-amber-100" : "border-slate-200 hover:border-slate-400"
+                }`}
+              >
+                <img src={selectedColor.images[view.key]} alt="" className="h-full w-full object-contain" />
+              </button>
+            ))}
           </div>
-          <p className="mt-3 text-center text-sm font-semibold text-slate-600">{selectedProductView.label} 보기</p>
-        </div>
-      </div>
 
-      <div className="min-w-0">
-        <p className="text-sm font-semibold text-navy-700">SoundMax 공식 스토어</p>
-        <h1 className="mt-2 text-2xl font-bold leading-tight text-slate-950 md:text-3xl">
-          SoundMax AirBeat Pro 무선 노이즈 캔슬링 이어버드
-        </h1>
-        <div className="mt-4 flex flex-wrap items-center gap-3">
-          <Stars value={4.3} />
-          <span className="font-semibold text-slate-800">원래 평균 별점 4.3</span>
-          <span className="text-slate-500">분석 리뷰 150개</span>
+          <div className="order-1 rounded-lg border border-slate-200 bg-white p-4 sm:order-2">
+            <div className="flex aspect-square max-h-[520px] items-center justify-center overflow-hidden rounded-lg bg-white shadow-inner">
+              <img
+                src={selectedColor.images[selectedProductView.key]}
+                alt={`SoundMax AirBeat Pro 무선 노이즈 캔슬링 이어버드 ${selectedProductView.label} 사진`}
+                className="h-full w-full object-contain transition duration-300"
+              />
+            </div>
+            <p className="mt-3 text-center text-sm font-semibold text-slate-600">{selectedProductView.label} 보기</p>
+          </div>
         </div>
 
-        <div className="mt-5 border-y border-slate-200 py-4">
-          <div>
-            <p className="text-sm font-bold text-slate-900">색상</p>
-            <div className="mt-3 flex items-center gap-3">
-              {colors.map((color) => (
-                <button
-                  key={color.name}
-                  type="button"
-                  onClick={() => setSelectedColorName(color.name)}
-                  aria-label={`${color.name} 선택`}
-                  className={`grid h-11 w-11 place-items-center rounded-full border bg-white transition ${
-                    selectedColorName === color.name ? "border-amber-500 ring-2 ring-amber-100" : "border-slate-300 hover:border-slate-500"
-                  }`}
-                >
-                  <span className={`h-8 w-8 rounded-full border border-slate-200 ${color.value}`} />
-                </button>
-              ))}
+        <div className="min-w-0">
+          <p className="text-sm font-semibold text-navy-700">SoundMax 공식 스토어</p>
+          <h1 className="mt-2 text-2xl font-bold leading-tight text-slate-950 md:text-3xl">
+            SoundMax AirBeat Pro 무선 노이즈 캔슬링 이어버드
+          </h1>
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <Stars value={4.3} />
+            <span className="font-semibold text-slate-800">원래 평균 별점 4.3</span>
+            <span className="text-slate-500">분석 리뷰 150개</span>
+          </div>
+
+          <div className="mt-5 border-y border-slate-200 py-4">
+            <div>
+              <p className="text-sm font-bold text-slate-900">색상</p>
+              <div className="mt-3 flex items-center gap-3">
+                {colors.map((color) => (
+                  <button
+                    key={color.name}
+                    type="button"
+                    onClick={() => setSelectedColorName(color.name)}
+                    aria-label={`${color.name} 선택`}
+                    className={`grid h-11 w-11 place-items-center rounded-full border bg-white transition ${
+                      selectedColorName === color.name ? "border-amber-500 ring-2 ring-amber-100" : "border-slate-300 hover:border-slate-500"
+                    }`}
+                  >
+                    <span className={`h-8 w-8 rounded-full border border-slate-200 ${color.value}`} />
+                  </button>
+                ))}
+              </div>
+            </div>
+          </div>
+
+          <div className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-3">
+            <div className="rounded-md bg-slate-50 p-3">
+              <p className="font-bold text-slate-900">노이즈 캔슬링</p>
+              <p className="mt-1 text-slate-500">적응형 ANC</p>
+            </div>
+            <div className="rounded-md bg-slate-50 p-3">
+              <p className="font-bold text-slate-900">배터리</p>
+              <p className="mt-1 text-slate-500">케이스 포함 36시간</p>
+            </div>
+            <div className="rounded-md bg-slate-50 p-3">
+              <p className="font-bold text-slate-900">연결</p>
+              <p className="mt-1 text-slate-500">멀티포인트 지원</p>
+            </div>
+          </div>
+
+          <div className="mt-5 grid gap-3 text-sm text-slate-700">
+            <div className="flex items-center gap-2 rounded-md bg-blue-50 p-3 text-navy-800">
+              <MessageSquareText className="text-navy-700" size={20} />
+              리뷰 텍스트를 반영한 보정 별점과 속성별 만족도 제공
+            </div>
+            <div className="flex items-center gap-2 rounded-md bg-slate-50 p-3">
+              <ShieldCheck className="text-emerald-600" size={20} />
+              공식 스토어 정품 · 1년 무상 보증
             </div>
           </div>
         </div>
 
-        <div className="mt-5 grid gap-3 text-sm text-slate-700 md:grid-cols-3">
-          <div className="rounded-md bg-slate-50 p-3">
-            <p className="font-bold text-slate-900">노이즈 캔슬링</p>
-            <p className="mt-1 text-slate-500">적응형 ANC</p>
+        <aside className="rounded-lg border border-slate-200 p-4 xl:sticky xl:top-32 xl:self-start">
+          <p className="text-sm text-slate-500">판매가</p>
+          <p className="mt-1 text-3xl font-bold text-slate-950">₩289,000</p>
+          <p className="mt-2 text-sm text-slate-500">카드사 즉시할인 최대 7%</p>
+          <div className="mt-4 rounded-md bg-emerald-50 p-3 text-sm text-emerald-800">
+            <div className="flex items-center gap-2 font-bold">
+              <Truck size={18} />
+              무료배송
+            </div>
+            <p className="mt-1">내일 도착 예정 · 재고 있음</p>
           </div>
-          <div className="rounded-md bg-slate-50 p-3">
-            <p className="font-bold text-slate-900">배터리</p>
-            <p className="mt-1 text-slate-500">케이스 포함 36시간</p>
+          <div className="mt-4 space-y-2">
+            <button
+              type="button"
+              onClick={() => setIsAddedToCart(true)}
+              className="flex w-full items-center justify-center gap-2 rounded-md bg-amberSearch px-4 py-3 font-bold text-navy-950 transition hover:bg-amber-400"
+            >
+              <ShoppingCart size={19} />
+              {isAddedToCart ? "장바구니에 담김" : "장바구니 담기"}
+            </button>
+            {isAddedToCart && (
+              <p className="rounded-md bg-amber-50 px-3 py-2 text-center text-sm font-semibold text-navy-800">
+                상품이 장바구니에 담겼습니다.
+              </p>
+            )}
+            <button type="button" className="w-full rounded-md bg-navy-900 px-4 py-3 font-bold text-white transition hover:bg-navy-800">
+              바로 구매
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsFavorite((current) => !current)}
+              aria-pressed={isFavorite}
+              className={`flex w-full items-center justify-center gap-2 rounded-md border px-4 py-3 font-semibold transition ${
+                isFavorite
+                  ? "border-rose-200 bg-rose-50 text-rose-600 hover:bg-rose-100"
+                  : "border-slate-300 text-slate-700 hover:bg-slate-50"
+              }`}
+            >
+              <Heart size={18} fill={isFavorite ? "currentColor" : "none"} />
+              {isFavorite ? "관심상품 등록됨" : "관심상품"}
+            </button>
           </div>
-          <div className="rounded-md bg-slate-50 p-3">
-            <p className="font-bold text-slate-900">연결</p>
-            <p className="mt-1 text-slate-500">멀티포인트 지원</p>
-          </div>
-        </div>
-
-        <div className="mt-5 grid gap-3 text-sm text-slate-700">
-          <div className="flex items-center gap-2 rounded-md bg-blue-50 p-3 text-navy-800">
-            <MessageSquareText className="text-navy-700" size={20} />
-            리뷰 텍스트를 반영한 보정 별점과 속성별 만족도 제공
-          </div>
-          <div className="flex items-center gap-2 rounded-md bg-slate-50 p-3">
-            <ShieldCheck className="text-emerald-600" size={20} />
-            공식 스토어 정품 · 1년 무상 보증
-          </div>
-        </div>
-      </div>
-
-      <aside className="rounded-lg border border-slate-200 p-4 xl:sticky xl:top-32 xl:self-start">
-        <p className="text-sm text-slate-500">판매가</p>
-        <p className="mt-1 text-3xl font-bold text-slate-950">₩289,000</p>
-        <p className="mt-2 text-sm text-slate-500">카드사 즉시할인 최대 7%</p>
-        <div className="mt-4 rounded-md bg-emerald-50 p-3 text-sm text-emerald-800">
-          <div className="flex items-center gap-2 font-bold">
-            <Truck size={18} />
-            무료배송
-          </div>
-          <p className="mt-1">내일 도착 예정 · 재고 있음</p>
-        </div>
-        <div className="mt-4 space-y-2">
-          <button className="flex w-full items-center justify-center gap-2 rounded-md bg-amberSearch px-4 py-3 font-bold text-navy-950 transition hover:bg-amber-400">
-            <ShoppingCart size={19} />
-            장바구니 담기
-          </button>
-          <button className="w-full rounded-md bg-navy-900 px-4 py-3 font-bold text-white transition hover:bg-navy-800">바로 구매</button>
-          <button
-            type="button"
-            onClick={() => setIsFavorite((current) => !current)}
-            aria-pressed={isFavorite}
-            className={`flex w-full items-center justify-center gap-2 rounded-md border px-4 py-3 font-semibold transition ${
-              isFavorite
-                ? "border-rose-200 bg-rose-50 text-rose-600 hover:bg-rose-100"
-                : "border-slate-300 text-slate-700 hover:bg-slate-50"
-            }`}
-          >
-            <Heart size={18} fill={isFavorite ? "currentColor" : "none"} />
-            {isFavorite ? "관심상품 등록됨" : "관심상품"}
-          </button>
-        </div>
-        <p className="mt-4 text-xs leading-5 text-slate-500">
-          구매 후 작성된 리뷰를 바탕으로 별점과 텍스트 만족도의 차이를 함께 보여줍니다.
-        </p>
-      </aside>
-    </section>
+          <p className="mt-4 text-xs leading-5 text-slate-500">
+            구매 후 작성된 리뷰를 바탕으로 별점과 텍스트 만족도의 차이를 함께 보여줍니다.
+          </p>
+        </aside>
+      </section>
   );
 }

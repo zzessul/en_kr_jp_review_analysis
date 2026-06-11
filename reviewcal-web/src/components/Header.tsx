@@ -1,8 +1,11 @@
 import { useState } from "react";
-import { BarChart3, Search, ShoppingCart, Star, UserRound, X } from "lucide-react";
+import { BarChart3, PackageOpen, Search, ShoppingCart, Star, UserRound, X } from "lucide-react";
+
+const quickMenus = ["오늘의 특가", "보정 평점 높은 상품", "한·영·일 리뷰 분석", "새 제품 반응 탐색", "전자기기", "생활용품", "고객센터"];
 
 export default function Header() {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
+  const [isCartOpen, setIsCartOpen] = useState(false);
 
   return (
     <>
@@ -19,10 +22,13 @@ export default function Header() {
             </div>
           </div>
 
-          <div className="hidden min-w-[150px] items-center rounded border border-white/10 bg-white/10 px-3 py-2 text-sm text-slate-100 md:flex">
+          <button
+            type="button"
+            className="hidden min-w-[150px] items-center rounded border border-white/10 bg-white/10 px-3 py-2 text-left text-sm text-slate-100 transition hover:bg-white/15 active:scale-[0.99] md:flex"
+          >
             전체 카테고리
             <span className="ml-auto text-xs">▼</span>
-          </div>
+          </button>
 
           <div className="flex h-11 min-w-0 flex-1 overflow-hidden rounded-md bg-white">
             <select aria-label="카테고리 선택" className="hidden border-0 bg-slate-100 px-3 text-sm text-slate-700 outline-none sm:block">
@@ -35,31 +41,37 @@ export default function Header() {
               className="min-w-0 flex-1 px-4 text-slate-900 outline-none"
               placeholder="상품명, 브랜드, 리뷰 키워드 검색"
             />
-            <button aria-label="검색" className="grid w-14 place-items-center bg-amberSearch text-navy-950">
+            <button aria-label="검색" className="grid w-14 place-items-center bg-amberSearch text-navy-950 transition hover:bg-amber-400 active:bg-amber-500">
               <Search size={21} strokeWidth={2.8} />
             </button>
           </div>
 
           <nav className="hidden items-center gap-5 text-sm lg:flex">
-            <button type="button" onClick={() => setIsLoginOpen(true)} className="flex items-center gap-2 text-slate-100">
+            <button type="button" onClick={() => setIsLoginOpen(true)} className="flex items-center gap-2 rounded px-2 py-1 text-slate-100 transition hover:bg-white/10 active:scale-[0.98]">
               <UserRound size={18} />
               로그인
             </button>
-            <a className="flex items-center gap-2 font-semibold" href="#cart">
+            <button
+              type="button"
+              onClick={() => setIsCartOpen(true)}
+              className="flex items-center gap-2 rounded px-2 py-1 font-semibold transition hover:bg-white/10 active:scale-[0.98]"
+            >
               <ShoppingCart size={20} />
               장바구니
-            </a>
+            </button>
           </nav>
         </div>
         <div className="bg-navy-800">
           <div className="mx-auto flex max-w-7xl gap-7 overflow-x-auto px-5 py-2 text-sm text-slate-100">
-            <span>오늘의 특가</span>
-            <span>보정 평점 높은 상품</span>
-            <span>한·영·일 리뷰 분석</span>
-            <span>새 제품 반응 탐색</span>
-            <span>전자기기</span>
-            <span>생활용품</span>
-            <span>고객센터</span>
+            {quickMenus.map((menu) => (
+              <button
+                key={menu}
+                type="button"
+                className="shrink-0 rounded px-2 py-1 font-semibold transition hover:bg-white/10 hover:text-amber-100 active:scale-[0.98] focus:outline-none focus:ring-2 focus:ring-amber-300/70"
+              >
+                {menu}
+              </button>
+            ))}
           </div>
         </div>
       </header>
@@ -113,6 +125,42 @@ export default function Header() {
                 비밀번호 찾기
               </button>
             </div>
+          </div>
+        </div>
+      )}
+
+      {isCartOpen && (
+        <div className="fixed inset-0 z-50 grid place-items-center bg-slate-950/55 px-4" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+          <div className="w-full max-w-md rounded-lg bg-white p-6 shadow-2xl">
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <p className="text-sm font-semibold text-navy-700">ReviewCal 장바구니</p>
+                <h2 id="cart-title" className="mt-1 text-2xl font-bold text-slate-950">
+                  장바구니
+                </h2>
+              </div>
+              <button type="button" onClick={() => setIsCartOpen(false)} aria-label="장바구니 창 닫기" className="rounded-full p-1 text-slate-400 hover:bg-slate-100 hover:text-slate-700">
+                <X size={20} />
+              </button>
+            </div>
+
+            <div className="mt-7 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-5 py-8 text-center">
+              <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-white text-slate-500 shadow-sm">
+                <PackageOpen size={28} />
+              </div>
+              <p className="mt-4 text-lg font-bold text-slate-950">장바구니가 비어 있습니다</p>
+              <p className="mt-2 text-sm leading-6 text-slate-500">
+                마음에 드는 상품을 담으면 이곳에서 가격과 배송 정보를 한눈에 확인할 수 있습니다.
+              </p>
+            </div>
+
+            <button
+              type="button"
+              onClick={() => setIsCartOpen(false)}
+              className="mt-5 w-full rounded-md bg-amberSearch px-4 py-3 font-bold text-navy-950 transition hover:bg-amber-400"
+            >
+              계속 쇼핑하기
+            </button>
           </div>
         </div>
       )}
