@@ -162,28 +162,19 @@ export default function ProductCard({ onAddToCart }: { onAddToCart: (quantity: n
           <p className="mt-1 text-3xl font-bold text-slate-950">₩289,000</p>
           <p className="mt-2 text-sm text-slate-500">카드사 즉시할인 최대 7%</p>
 
-          <div className="mt-4 rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-navy-900">
-            <div className="flex items-center gap-2 font-bold">
-              <TicketPercent size={18} className="text-amber-600" />
+          <div className="mt-4 grid grid-cols-3 gap-2 text-xs font-bold">
+            <div className="flex items-center justify-center gap-1.5 rounded-md border border-amber-200 bg-amber-50 px-2 py-2 text-navy-900">
+              <TicketPercent size={15} className="text-amber-600" />
               오늘의 쿠폰
             </div>
-            <p className="mt-1 text-slate-700">앱 전용 12,000원 할인 · 카드 즉시할인 중복 가능</p>
-          </div>
-
-          <div className="mt-3 rounded-md bg-emerald-50 p-3 text-sm text-emerald-800">
-            <div className="flex items-center gap-2 font-bold">
-              <Truck size={18} />
+            <div className="flex items-center justify-center gap-1.5 rounded-md bg-emerald-50 px-2 py-2 text-emerald-800">
+              <Truck size={15} />
               무료배송
             </div>
-            <p className="mt-1">내일 도착 예정 · 오후 2시 전 주문 시 당일 출고</p>
-          </div>
-
-          <div className="mt-3 rounded-md bg-slate-50 p-3 text-sm text-slate-700">
-            <div className="flex items-center gap-2 font-bold text-slate-900">
-              <RefreshCcw size={18} className="text-navy-700" />
-              무료 반품
+            <div className="flex items-center justify-center gap-1.5 rounded-md bg-slate-50 px-2 py-2 text-slate-800">
+              <RefreshCcw size={15} className="text-navy-700" />
+              무료반품
             </div>
-            <p className="mt-1">수령 후 7일 이내 무료 반품 · 공식 스토어 정품 보증</p>
           </div>
 
           <div className="mt-4">
