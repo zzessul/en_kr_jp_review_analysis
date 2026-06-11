@@ -29,7 +29,7 @@ export default function App() {
     <div className="min-h-screen bg-slate-100">
       <Header />
       <main className="mx-auto max-w-7xl px-5 py-6">
-        <div className="mb-4 text-sm text-slate-500">홈 &gt; 전자기기 &gt; 헤드폰 &gt; SoundMax WH-1000X</div>
+        <div className="mb-4 text-sm text-slate-500">홈 &gt; 전자기기 &gt; 무선 오디오 &gt; SoundMax AirBeat Pro</div>
 
         <ProductCard />
 

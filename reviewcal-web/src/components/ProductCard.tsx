@@ -55,7 +55,7 @@ export default function ProductCard() {
           <div className="flex aspect-square max-h-[520px] items-center justify-center overflow-hidden rounded-lg bg-white shadow-inner">
             <img
               src={productViews[selectedView].src}
-              alt={`SoundMax WH-1000X 무선 노이즈 캔슬링 헤드폰 ${productViews[selectedView].label} 사진`}
+              alt={`SoundMax AirBeat Pro 무선 노이즈 캔슬링 이어버드 ${productViews[selectedView].label} 사진`}
               className="h-full w-full object-contain transition duration-300"
             />
           </div>
@@ -66,7 +66,7 @@ export default function ProductCard() {
       <div className="min-w-0">
         <p className="text-sm font-semibold text-navy-700">SoundMax 공식 스토어</p>
         <h1 className="mt-2 text-2xl font-bold leading-tight text-slate-950 md:text-3xl">
-          SoundMax WH-1000X 무선 노이즈 캔슬링 헤드폰
+          SoundMax AirBeat Pro 무선 노이즈 캔슬링 이어버드
         </h1>
         <div className="mt-4 flex flex-wrap items-center gap-3">
           <Stars value={4.3} />
@@ -102,7 +102,7 @@ export default function ProductCard() {
           </div>
           <div className="rounded-md bg-slate-50 p-3">
             <p className="font-bold text-slate-900">배터리</p>
-            <p className="mt-1 text-slate-500">최대 36시간</p>
+            <p className="mt-1 text-slate-500">케이스 포함 36시간</p>
           </div>
           <div className="rounded-md bg-slate-50 p-3">
             <p className="font-bold text-slate-900">연결</p>
