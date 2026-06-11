@@ -2,8 +2,22 @@ import { useState } from "react";
 import { Heart, MessageSquareText, ShieldCheck, ShoppingCart, Truck } from "lucide-react";
 import soundmaxBottom from "../assets/soundmax-bottom.png";
 import soundmaxFront from "../assets/soundmax-front.png";
+import soundmaxNavyBottom from "../assets/soundmax-navy-bottom.png";
+import soundmaxNavyFront from "../assets/soundmax-navy-front.png";
+import soundmaxNavySide from "../assets/soundmax-navy-side.png";
+import soundmaxNavyTop from "../assets/soundmax-navy-top.png";
+import soundmaxPinkBottom from "../assets/soundmax-pink-bottom.png";
+import soundmaxPinkFront from "../assets/soundmax-pink-front.png";
+import soundmaxPinkSide from "../assets/soundmax-pink-side.png";
+import soundmaxPinkTop from "../assets/soundmax-pink-top.png";
 import soundmaxSide from "../assets/soundmax-side.png";
 import soundmaxTop from "../assets/soundmax-top.png";
+import soundmaxWhiteBottom from "../assets/soundmax-white-bottom.png";
+import soundmaxWhiteFront from "../assets/soundmax-white-front.png";
+import soundmaxWhiteSide from "../assets/soundmax-white-side.png";
+import soundmaxWhiteTop from "../assets/soundmax-white-top.png";
+
+type ProductViewKey = "front" | "side" | "top" | "bottom";
 
 function Stars({ value }: { value: number }) {
   return (
@@ -14,18 +28,34 @@ function Stars({ value }: { value: number }) {
   );
 }
 
-const productViews = [
-  { label: "정면", src: soundmaxFront },
-  { label: "측면", src: soundmaxSide },
-  { label: "위쪽", src: soundmaxTop },
-  { label: "아래쪽", src: soundmaxBottom },
+const productViews: Array<{ key: ProductViewKey; label: string }> = [
+  { key: "front", label: "정면" },
+  { key: "side", label: "측면" },
+  { key: "top", label: "위쪽" },
+  { key: "bottom", label: "아래쪽" },
 ];
 
 const colors = [
-  { name: "클래식 블랙", value: "bg-slate-950", imageFilter: "grayscale(1) brightness(0.72) contrast(1.22)" },
-  { name: "클라우드 화이트", value: "bg-white", imageFilter: "invert(1) grayscale(1) brightness(1.62) contrast(0.72)" },
-  { name: "블러쉬 핑크", value: "bg-rose-200", imageFilter: "invert(1) sepia(0.72) saturate(1.5) hue-rotate(295deg) brightness(1.2) contrast(0.84)" },
-  { name: "미드나잇 네이비", value: "bg-navy-900", imageFilter: "none" },
+  {
+    name: "클래식 블랙",
+    value: "bg-slate-950",
+    images: { front: soundmaxFront, side: soundmaxSide, top: soundmaxTop, bottom: soundmaxBottom },
+  },
+  {
+    name: "클라우드 화이트",
+    value: "bg-white",
+    images: { front: soundmaxWhiteFront, side: soundmaxWhiteSide, top: soundmaxWhiteTop, bottom: soundmaxWhiteBottom },
+  },
+  {
+    name: "블러쉬 핑크",
+    value: "bg-rose-200",
+    images: { front: soundmaxPinkFront, side: soundmaxPinkSide, top: soundmaxPinkTop, bottom: soundmaxPinkBottom },
+  },
+  {
+    name: "미드나잇 네이비",
+    value: "bg-navy-900",
+    images: { front: soundmaxNavyFront, side: soundmaxNavySide, top: soundmaxNavyTop, bottom: soundmaxNavyBottom },
+  },
 ];
 
 export default function ProductCard() {
@@ -33,7 +63,7 @@ export default function ProductCard() {
   const [selectedView, setSelectedView] = useState(0);
   const [selectedColorName, setSelectedColorName] = useState(colors[0].name);
   const selectedColor = colors.find((color) => color.name === selectedColorName) ?? colors[0];
-  const imageColorStyle = { filter: selectedColor.imageFilter };
+  const selectedProductView = productViews[selectedView];
 
   return (
     <section className="grid gap-6 rounded-lg bg-white p-5 shadow-soft lg:grid-cols-[minmax(360px,470px)_minmax(0,1fr)] xl:grid-cols-[minmax(380px,480px)_minmax(0,1fr)_260px]">
@@ -49,21 +79,20 @@ export default function ProductCard() {
                 selectedView === index ? "border-amber-400 ring-2 ring-amber-100" : "border-slate-200 hover:border-slate-400"
               }`}
             >
-              <img src={view.src} alt="" style={imageColorStyle} className="h-full w-full object-contain transition duration-300" />
+              <img src={selectedColor.images[view.key]} alt="" className="h-full w-full object-contain" />
             </button>
           ))}
         </div>
 
-        <div className="order-1 rounded-lg border border-slate-200 bg-slate-50 p-4 sm:order-2">
+        <div className="order-1 rounded-lg border border-slate-200 bg-white p-4 sm:order-2">
           <div className="flex aspect-square max-h-[520px] items-center justify-center overflow-hidden rounded-lg bg-white shadow-inner">
             <img
-              src={productViews[selectedView].src}
-              alt={`SoundMax AirBeat Pro 무선 노이즈 캔슬링 이어버드 ${productViews[selectedView].label} 사진`}
-              style={imageColorStyle}
+              src={selectedColor.images[selectedProductView.key]}
+              alt={`SoundMax AirBeat Pro 무선 노이즈 캔슬링 이어버드 ${selectedProductView.label} 사진`}
               className="h-full w-full object-contain transition duration-300"
             />
           </div>
-          <p className="mt-3 text-center text-sm font-semibold text-slate-600">{productViews[selectedView].label} 보기</p>
+          <p className="mt-3 text-center text-sm font-semibold text-slate-600">{selectedProductView.label} 보기</p>
         </div>
       </div>
 
