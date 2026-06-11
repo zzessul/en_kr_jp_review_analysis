@@ -22,15 +22,18 @@ const productViews = [
 ];
 
 const colors = [
-  { name: "미드나잇 네이비", value: "bg-navy-900" },
-  { name: "클래식 블랙", value: "bg-slate-950" },
-  { name: "라이트 실버", value: "bg-slate-200" },
+  { name: "클래식 블랙", value: "bg-slate-950", imageFilter: "grayscale(1) brightness(0.72) contrast(1.22)" },
+  { name: "클라우드 화이트", value: "bg-white", imageFilter: "invert(1) grayscale(1) brightness(1.62) contrast(0.72)" },
+  { name: "블러쉬 핑크", value: "bg-rose-200", imageFilter: "invert(1) sepia(0.72) saturate(1.5) hue-rotate(295deg) brightness(1.2) contrast(0.84)" },
+  { name: "미드나잇 네이비", value: "bg-navy-900", imageFilter: "none" },
 ];
 
 export default function ProductCard() {
   const [isFavorite, setIsFavorite] = useState(false);
   const [selectedView, setSelectedView] = useState(0);
-  const [selectedColor, setSelectedColor] = useState(colors[0].name);
+  const [selectedColorName, setSelectedColorName] = useState(colors[0].name);
+  const selectedColor = colors.find((color) => color.name === selectedColorName) ?? colors[0];
+  const imageColorStyle = { filter: selectedColor.imageFilter };
 
   return (
     <section className="grid gap-6 rounded-lg bg-white p-5 shadow-soft lg:grid-cols-[minmax(360px,470px)_minmax(0,1fr)] xl:grid-cols-[minmax(380px,480px)_minmax(0,1fr)_260px]">
@@ -46,7 +49,7 @@ export default function ProductCard() {
                 selectedView === index ? "border-amber-400 ring-2 ring-amber-100" : "border-slate-200 hover:border-slate-400"
               }`}
             >
-              <img src={view.src} alt="" className="h-full w-full object-contain" />
+              <img src={view.src} alt="" style={imageColorStyle} className="h-full w-full object-contain transition duration-300" />
             </button>
           ))}
         </div>
@@ -56,6 +59,7 @@ export default function ProductCard() {
             <img
               src={productViews[selectedView].src}
               alt={`SoundMax AirBeat Pro 무선 노이즈 캔슬링 이어버드 ${productViews[selectedView].label} 사진`}
+              style={imageColorStyle}
               className="h-full w-full object-contain transition duration-300"
             />
           </div>
@@ -82,13 +86,13 @@ export default function ProductCard() {
                 <button
                   key={color.name}
                   type="button"
-                  onClick={() => setSelectedColor(color.name)}
+                  onClick={() => setSelectedColorName(color.name)}
                   aria-label={`${color.name} 선택`}
                   className={`grid h-11 w-11 place-items-center rounded-full border bg-white transition ${
-                    selectedColor === color.name ? "border-amber-500 ring-2 ring-amber-100" : "border-slate-300 hover:border-slate-500"
+                    selectedColorName === color.name ? "border-amber-500 ring-2 ring-amber-100" : "border-slate-300 hover:border-slate-500"
                   }`}
                 >
-                  <span className={`h-8 w-8 rounded-full ${color.value}`} />
+                  <span className={`h-8 w-8 rounded-full border border-slate-200 ${color.value}`} />
                 </button>
               ))}
             </div>
