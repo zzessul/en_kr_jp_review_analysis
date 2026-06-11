@@ -224,7 +224,7 @@ export const reviews: Review[] = languageOrder.flatMap((langKey) =>
       id: reviewsOffset(langKey) + index + 1,
       userName: reviewerNames[language][index % reviewerNames[language].length],
       date: dateFromIndex(reviewsOffset(langKey) + index),
-      title: review.title || fallbackTitle(review),
+      title: review.title?.trim() ?? "",
       attributes: review.attributes.length ? review.attributes : ["표현"],
     };
   }),
@@ -263,12 +263,6 @@ function dateFromIndex(index: number) {
   const base = new Date(Date.UTC(2026, 4, 28));
   base.setUTCDate(base.getUTCDate() - index);
   return `${base.getUTCFullYear()}.${String(base.getUTCMonth() + 1).padStart(2, "0")}.${String(base.getUTCDate()).padStart(2, "0")}`;
-}
-
-function fallbackTitle(review: PayloadReview) {
-  const trimmed = review.body.trim();
-  if (!trimmed) return `${review.languageLabel} 리뷰`;
-  return trimmed.length > 44 ? `${trimmed.slice(0, 44)}...` : trimmed;
 }
 
 function aggregateDistribution(field: "originalRating" | "calibratedRating") {

@@ -47,8 +47,8 @@ export default function ReviewCard({ review }: { review: Review }) {
         </div>
       </div>
 
-      <h4 className="mt-4 text-lg font-bold text-slate-950">{review.title}</h4>
-      <p className="mt-2 leading-7 text-slate-700">{review.body}</p>
+      {review.title && <h4 className="mt-4 text-lg font-bold text-slate-950">{review.title}</h4>}
+      <p className={`${review.title ? "mt-2" : "mt-4"} leading-7 text-slate-700`}>{review.body}</p>
       <div className="mt-3 rounded-md bg-blue-50 px-3 py-2 text-sm leading-6 text-navy-800">
         <span className="font-bold">언어별 해석: </span>
         {review.translatedNote}

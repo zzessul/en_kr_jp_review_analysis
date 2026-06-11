@@ -16,8 +16,7 @@ const initialFilters: ReviewFilterState = {
   query: "",
 };
 
-const initialVisibleCount = 12;
-const featuredAudioReviewIds = [29, 62, 107, 101, 10, 58, 97, 18, 16];
+const featuredAudioReviewIds = [29, 62, 107, 101, 10];
 const featuredAudioRank = new Map(featuredAudioReviewIds.map((id, index) => [id, index]));
 
 export default function App() {
@@ -25,7 +24,7 @@ export default function App() {
   const [showAll, setShowAll] = useState(false);
 
   const filteredReviews = useMemo(() => applyFilters(reviews, filters), [filters]);
-  const visibleReviews = showAll ? filteredReviews : filteredReviews.slice(0, initialVisibleCount);
+  const visibleReviews = showAll ? filteredReviews : filteredReviews.filter(isFeaturedAudioReview);
 
   return (
     <div className="min-h-screen bg-slate-100">
@@ -57,7 +56,7 @@ export default function App() {
               </div>
             )}
           </div>
-          {filteredReviews.length > initialVisibleCount && (
+          {filteredReviews.length > visibleReviews.length && (
             <div className="flex justify-center">
               <button
                 type="button"
@@ -117,6 +116,10 @@ function compareReviews(a: Review, b: Review, sort: ReviewFilterState["sort"]) {
 
 function featuredScore(review: Review) {
   return featuredAudioRank.get(review.id) ?? Number.POSITIVE_INFINITY;
+}
+
+function isFeaturedAudioReview(review: Review) {
+  return featuredAudioRank.has(review.id);
 }
 
 function dateValue(date: string) {
