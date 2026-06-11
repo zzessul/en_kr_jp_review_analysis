@@ -176,11 +176,6 @@ export default function ProductCard() {
               <ShoppingCart size={19} />
               {isAddedToCart ? "장바구니에 담김" : "장바구니 담기"}
             </button>
-            {isAddedToCart && (
-              <p className="rounded-md bg-amber-50 px-3 py-2 text-center text-sm font-semibold text-navy-800">
-                상품이 장바구니에 담겼습니다.
-              </p>
-            )}
             <button type="button" className="w-full rounded-md bg-navy-900 px-4 py-3 font-bold text-white transition hover:bg-navy-800">
               바로 구매
             </button>
