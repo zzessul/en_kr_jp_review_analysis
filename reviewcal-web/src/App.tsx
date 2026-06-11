@@ -17,6 +17,8 @@ const initialFilters: ReviewFilterState = {
 };
 
 const initialVisibleCount = 12;
+const featuredAudioReviewIds = [29, 62, 107, 101, 10, 58, 97, 18, 16];
+const featuredAudioRank = new Map(featuredAudioReviewIds.map((id, index) => [id, index]));
 
 export default function App() {
   const [filters, setFilters] = useState<ReviewFilterState>(initialFilters);
@@ -108,7 +110,13 @@ function compareReviews(a: Review, b: Review, sort: ReviewFilterState["sort"]) {
     return Math.abs(b.originalRating - b.calibratedRating) - Math.abs(a.originalRating - a.calibratedRating);
   }
   if (sort === "attributeLow") return a.calibratedRating - b.calibratedRating;
+  const featuredDifference = featuredScore(a) - featuredScore(b);
+  if (featuredDifference !== 0) return featuredDifference;
   return dateValue(b.date) - dateValue(a.date);
+}
+
+function featuredScore(review: Review) {
+  return featuredAudioRank.get(review.id) ?? Number.POSITIVE_INFINITY;
 }
 
 function dateValue(date: string) {
