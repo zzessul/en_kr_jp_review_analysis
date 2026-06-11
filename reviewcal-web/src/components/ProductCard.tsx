@@ -162,18 +162,18 @@ export default function ProductCard({ onAddToCart }: { onAddToCart: (quantity: n
           <p className="mt-1 text-3xl font-bold text-slate-950">₩289,000</p>
           <p className="mt-2 text-sm text-slate-500">카드사 즉시할인 최대 7%</p>
 
-          <div className="mt-4 grid grid-cols-3 gap-2 text-xs font-bold">
-            <div className="flex items-center justify-center gap-1.5 rounded-md border border-amber-200 bg-amber-50 px-2 py-2 text-navy-900">
-              <TicketPercent size={15} className="text-amber-600" />
-              오늘의 쿠폰
+          <div className="mt-4 grid grid-cols-3 gap-1.5 text-[11px] font-bold">
+            <div className="flex items-center justify-center gap-1 rounded-md border border-amber-200 bg-amber-50 px-1.5 py-2 text-navy-900">
+              <TicketPercent size={14} className="shrink-0 text-amber-600" />
+              <span className="whitespace-nowrap">쿠폰</span>
             </div>
-            <div className="flex items-center justify-center gap-1.5 rounded-md bg-emerald-50 px-2 py-2 text-emerald-800">
-              <Truck size={15} />
-              무료배송
+            <div className="flex items-center justify-center gap-1 rounded-md bg-emerald-50 px-1.5 py-2 text-emerald-800">
+              <Truck size={14} className="shrink-0" />
+              <span className="whitespace-nowrap">무료배송</span>
             </div>
-            <div className="flex items-center justify-center gap-1.5 rounded-md bg-slate-50 px-2 py-2 text-slate-800">
-              <RefreshCcw size={15} className="text-navy-700" />
-              무료반품
+            <div className="flex items-center justify-center gap-1 rounded-md bg-slate-50 px-1.5 py-2 text-slate-800">
+              <RefreshCcw size={14} className="shrink-0 text-navy-700" />
+              <span className="whitespace-nowrap">무료반품</span>
             </div>
           </div>
 

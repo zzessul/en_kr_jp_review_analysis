@@ -60,7 +60,7 @@ export default function ReviewSummary() {
         <ReviewHighlightCard title="리뷰에서 확인된 아쉬운 점" items={reviewHighlights.cons} tone="caution" />
       </div>
 
-      <div className="mt-6 grid gap-5 lg:grid-cols-[1fr_280px]">
+      <div className="mt-6">
         <div className="grid gap-5 md:grid-cols-2">
           <div className="rounded-lg border border-slate-200 p-4 md:col-span-2">
             <div className="mb-3 flex items-center gap-2 font-bold text-slate-900">
@@ -97,24 +97,6 @@ export default function ReviewSummary() {
                 </div>
               ))}
             </div>
-          </div>
-        </div>
-
-        <div className="rounded-lg border border-slate-200 p-4">
-          <p className="text-sm font-bold text-slate-900">평균 비교</p>
-          <div className="mt-4 space-y-3">
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-slate-600">기존 별점</span>
-              <span className="text-xl font-bold text-amber-600">4.3</span>
-            </div>
-            <div className="flex items-center justify-between">
-              <span className="text-sm text-slate-600">보정 별점</span>
-              <span className="text-xl font-bold text-navy-800">3.8</span>
-            </div>
-          </div>
-          <div className="mt-4 rounded-md bg-slate-50 p-3 text-sm text-slate-600">
-            같은 5점 리뷰라도 한국어와 일본어에서는 완곡한 아쉬움 표현이, 영어에서는 속성별 장단점 분리가 다르게 나타났습니다.
-            새 제품 반응 탐색에는 이 언어별 차이를 반영한 보정 순위를 사용합니다.
           </div>
         </div>
       </div>
