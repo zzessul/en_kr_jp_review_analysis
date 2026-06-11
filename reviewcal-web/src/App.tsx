@@ -25,6 +25,7 @@ export default function App() {
   const [filters, setFilters] = useState<ReviewFilterState>(initialFilters);
   const [showAll, setShowAll] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
+  const [cartCount, setCartCount] = useState(0);
 
   const filteredReviews = useMemo(() => applyFilters(reviews, filters), [filters]);
   const featuredReviews = filteredReviews.filter(isFeaturedAudioReview);
@@ -35,11 +36,11 @@ export default function App() {
 
   return (
     <div className="min-h-screen bg-slate-100">
-      <Header />
+      <Header cartCount={cartCount} />
       <main className="mx-auto max-w-7xl px-5 py-6">
         <div className="mb-4 text-sm text-slate-500">홈 &gt; 전자기기 &gt; 무선 오디오 &gt; SoundMax AirBeat Pro</div>
 
-        <ProductCard />
+        <ProductCard onAddToCart={(quantity) => setCartCount(quantity)} />
 
         <div className="mt-6 grid gap-6 xl:grid-cols-[1fr_360px]">
           <div>

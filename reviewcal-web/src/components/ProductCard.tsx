@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Heart, MessageSquareText, ShieldCheck, ShoppingCart, Truck } from "lucide-react";
+import { Heart, Minus, MessageSquareText, Plus, RefreshCcw, ShieldCheck, ShoppingCart, TicketPercent, Truck } from "lucide-react";
 import soundmaxBottom from "../assets/soundmax-bottom.png";
 import soundmaxFront from "../assets/soundmax-front.png";
 import soundmaxNavyBottom from "../assets/soundmax-navy-bottom.png";
@@ -58,9 +58,10 @@ const colors = [
   },
 ];
 
-export default function ProductCard() {
+export default function ProductCard({ onAddToCart }: { onAddToCart: (quantity: number) => void }) {
   const [isFavorite, setIsFavorite] = useState(false);
   const [isAddedToCart, setIsAddedToCart] = useState(false);
+  const [quantity, setQuantity] = useState(1);
   const [selectedView, setSelectedView] = useState(0);
   const [selectedColorName, setSelectedColorName] = useState(colors[0].name);
   const selectedColor = colors.find((color) => color.name === selectedColorName) ?? colors[0];
@@ -160,17 +161,62 @@ export default function ProductCard() {
           <p className="text-sm text-slate-500">판매가</p>
           <p className="mt-1 text-3xl font-bold text-slate-950">₩289,000</p>
           <p className="mt-2 text-sm text-slate-500">카드사 즉시할인 최대 7%</p>
-          <div className="mt-4 rounded-md bg-emerald-50 p-3 text-sm text-emerald-800">
+
+          <div className="mt-4 rounded-md border border-amber-200 bg-amber-50 p-3 text-sm text-navy-900">
+            <div className="flex items-center gap-2 font-bold">
+              <TicketPercent size={18} className="text-amber-600" />
+              오늘의 쿠폰
+            </div>
+            <p className="mt-1 text-slate-700">앱 전용 12,000원 할인 · 카드 즉시할인 중복 가능</p>
+          </div>
+
+          <div className="mt-3 rounded-md bg-emerald-50 p-3 text-sm text-emerald-800">
             <div className="flex items-center gap-2 font-bold">
               <Truck size={18} />
               무료배송
             </div>
-            <p className="mt-1">내일 도착 예정 · 재고 있음</p>
+            <p className="mt-1">내일 도착 예정 · 오후 2시 전 주문 시 당일 출고</p>
           </div>
+
+          <div className="mt-3 rounded-md bg-slate-50 p-3 text-sm text-slate-700">
+            <div className="flex items-center gap-2 font-bold text-slate-900">
+              <RefreshCcw size={18} className="text-navy-700" />
+              무료 반품
+            </div>
+            <p className="mt-1">수령 후 7일 이내 무료 반품 · 공식 스토어 정품 보증</p>
+          </div>
+
+          <div className="mt-4">
+            <p className="mb-2 text-sm font-bold text-slate-900">수량</p>
+            <div className="inline-flex h-10 items-center overflow-hidden rounded-md border border-slate-300 bg-white">
+              <button
+                type="button"
+                aria-label="수량 감소"
+                disabled={quantity === 1}
+                onClick={() => setQuantity((current) => Math.max(1, current - 1))}
+                className="grid h-full w-10 place-items-center text-slate-700 transition hover:bg-slate-50 disabled:cursor-not-allowed disabled:opacity-40"
+              >
+                <Minus size={16} />
+              </button>
+              <span className="grid h-full min-w-12 place-items-center border-x border-slate-200 px-3 text-sm font-bold text-slate-950">{quantity}</span>
+              <button
+                type="button"
+                aria-label="수량 증가"
+                onClick={() => setQuantity((current) => Math.min(9, current + 1))}
+                className="grid h-full w-10 place-items-center text-slate-700 transition hover:bg-slate-50"
+              >
+                <Plus size={16} />
+              </button>
+            </div>
+          </div>
+
           <div className="mt-4 space-y-2">
             <button
               type="button"
-              onClick={() => setIsAddedToCart(true)}
+              onClick={() => {
+                setIsAddedToCart(true);
+                onAddToCart(quantity);
+              }}
               className="flex w-full items-center justify-center gap-2 rounded-md bg-amberSearch px-4 py-3 font-bold text-navy-950 transition hover:bg-amber-400"
             >
               <ShoppingCart size={19} />

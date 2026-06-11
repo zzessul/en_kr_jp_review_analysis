@@ -1,4 +1,4 @@
-import { ArrowDown, BarChart3, Gauge } from "lucide-react";
+import { AlertCircle, ArrowDown, BarChart3, CheckCircle2, Gauge } from "lucide-react";
 import {
   attributeSatisfaction,
   calibratedRatingDistribution,
@@ -14,6 +14,11 @@ function MetricCard({ label, value, tone }: { label: string; value: string; tone
     </div>
   );
 }
+
+const reviewHighlights = {
+  pros: ["착용감이 편하고 장시간 사용 부담이 적음", "배터리 지속시간과 케이스 충전 만족도가 높음", "멀티포인트 연결과 노이즈 캔슬링 성능이 자주 언급됨"],
+  cons: ["통화 품질은 주변 소음이 큰 환경에서 평가가 갈림", "케이스 크기와 터치 조작 민감도에 대한 아쉬움 존재", "언어별로 완곡한 불만 표현이 별점에 덜 반영되는 경향"],
+};
 
 export default function ReviewSummary() {
   return (
@@ -48,6 +53,11 @@ export default function ReviewSummary() {
           별점은 같아도 만족도는 다를 수 있습니다. ReviewCal은 한·영·일 리뷰 텍스트의 표현과 속성 감성을 분석해,
           소비자가 실제로 느낀 만족도에 가까운 순서로 리뷰를 다시 보여줍니다.
         </p>
+      </div>
+
+      <div className="mt-5 grid gap-4 md:grid-cols-2">
+        <ReviewHighlightCard title="리뷰에서 자주 언급된 장점" items={reviewHighlights.pros} tone="positive" />
+        <ReviewHighlightCard title="리뷰에서 확인된 아쉬운 점" items={reviewHighlights.cons} tone="caution" />
       </div>
 
       <div className="mt-6 grid gap-5 lg:grid-cols-[1fr_280px]">
@@ -109,6 +119,37 @@ export default function ReviewSummary() {
         </div>
       </div>
     </section>
+  );
+}
+
+function ReviewHighlightCard({
+  title,
+  items,
+  tone,
+}: {
+  title: string;
+  items: string[];
+  tone: "positive" | "caution";
+}) {
+  const Icon = tone === "positive" ? CheckCircle2 : AlertCircle;
+  const iconColor = tone === "positive" ? "text-emerald-600" : "text-amber-600";
+  const background = tone === "positive" ? "bg-emerald-50 border-emerald-100" : "bg-amber-50 border-amber-100";
+
+  return (
+    <div className={`rounded-lg border p-4 ${background}`}>
+      <div className="flex items-center gap-2 font-bold text-slate-950">
+        <Icon size={19} className={iconColor} />
+        {title}
+      </div>
+      <ul className="mt-3 space-y-2 text-sm leading-6 text-slate-700">
+        {items.map((item) => (
+          <li key={item} className="flex gap-2">
+            <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-slate-400" />
+            <span>{item}</span>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

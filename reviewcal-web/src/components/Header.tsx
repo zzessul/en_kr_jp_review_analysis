@@ -3,9 +3,10 @@ import { BarChart3, PackageOpen, Search, ShoppingCart, Star, UserRound, X } from
 
 const quickMenus = ["오늘의 특가", "보정 평점 높은 상품", "한·영·일 리뷰 분석", "새 제품 반응 탐색", "전자기기", "생활용품", "고객센터"];
 
-export default function Header() {
+export default function Header({ cartCount }: { cartCount: number }) {
   const [isLoginOpen, setIsLoginOpen] = useState(false);
   const [isCartOpen, setIsCartOpen] = useState(false);
+  const cartTotal = cartCount * 289000;
 
   return (
     <>
@@ -56,7 +57,14 @@ export default function Header() {
               onClick={() => setIsCartOpen(true)}
               className="flex items-center gap-2 rounded px-2 py-1 font-semibold transition hover:bg-white/10 active:scale-[0.98]"
             >
-              <ShoppingCart size={20} />
+              <span className="relative">
+                <ShoppingCart size={20} />
+                {cartCount > 0 && (
+                  <span className="absolute -right-2 -top-2 grid h-4 min-w-4 place-items-center rounded-full bg-amberSearch px-1 text-[10px] font-black leading-none text-navy-950">
+                    {cartCount > 99 ? "99+" : cartCount}
+                  </span>
+                )}
+              </span>
               장바구니
             </button>
           </nav>
@@ -144,15 +152,31 @@ export default function Header() {
               </button>
             </div>
 
-            <div className="mt-7 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-5 py-8 text-center">
-              <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-white text-slate-500 shadow-sm">
-                <PackageOpen size={28} />
+            {cartCount > 0 ? (
+              <div className="mt-7 rounded-lg border border-slate-200 bg-slate-50 p-4">
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="font-bold text-slate-950">SoundMax AirBeat Pro</p>
+                    <p className="mt-1 text-sm text-slate-500">무선 노이즈 캔슬링 이어버드 · 수량 {cartCount}개</p>
+                  </div>
+                  <p className="text-right font-bold text-slate-950">₩{cartTotal.toLocaleString()}</p>
+                </div>
+                <div className="mt-4 flex items-center justify-between border-t border-slate-200 pt-4">
+                  <span className="text-sm font-semibold text-slate-600">예상 결제금액</span>
+                  <span className="text-xl font-black text-navy-900">₩{cartTotal.toLocaleString()}</span>
+                </div>
               </div>
-              <p className="mt-4 text-lg font-bold text-slate-950">장바구니가 비어 있습니다</p>
-              <p className="mt-2 text-sm leading-6 text-slate-500">
-                마음에 드는 상품을 담으면 이곳에서 가격과 배송 정보를 한눈에 확인할 수 있습니다.
-              </p>
-            </div>
+            ) : (
+              <div className="mt-7 rounded-lg border border-dashed border-slate-300 bg-slate-50 px-5 py-8 text-center">
+                <div className="mx-auto grid h-14 w-14 place-items-center rounded-full bg-white text-slate-500 shadow-sm">
+                  <PackageOpen size={28} />
+                </div>
+                <p className="mt-4 text-lg font-bold text-slate-950">장바구니가 비어 있습니다</p>
+                <p className="mt-2 text-sm leading-6 text-slate-500">
+                  마음에 드는 상품을 담으면 이곳에서 가격과 배송 정보를 한눈에 확인할 수 있습니다.
+                </p>
+              </div>
+            )}
 
             <button
               type="button"
